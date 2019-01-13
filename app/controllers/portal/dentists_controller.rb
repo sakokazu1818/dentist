@@ -5,6 +5,8 @@ class Portal::DentistsController < ApplicationController
   # GET /portal/dentists.json
   def index
     @portal_dentists = []
+
+    render :index_smart_phone, layout: 'smart_phone.html.haml' if request.smart_phone?
   end
 
   # GET /portal/dentists/1
