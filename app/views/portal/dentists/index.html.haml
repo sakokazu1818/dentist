@@ -1,0 +1,19 @@
+%h1 Listing portal_dentists
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @portal_dentists.each do |portal_dentist|
+      %tr
+        %td= link_to 'Show', portal_dentist
+        %td= link_to 'Edit', edit_portal_dentist_path(portal_dentist)
+        %td= link_to 'Destroy', portal_dentist, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Dentist', new_portal_dentist_path
