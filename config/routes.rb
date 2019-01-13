@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root  'dentists#index'
+  root  'portal/dentists#index'
 
-  resources :dentists
+  namespace :portal do
+    resources :dentists
+  end
 end

@@ -4,7 +4,7 @@ class Portal::DentistsController < ApplicationController
   # GET /portal/dentists
   # GET /portal/dentists.json
   def index
-    @portal_dentists = Portal::Dentist.all
+    @portal_dentists = []
   end
 
   # GET /portal/dentists/1
