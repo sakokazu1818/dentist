@@ -2,10 +2,15 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     %title Dentist
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
+  %header
+    .container= render partial: 'header_smart_phone'
   %body
-    = yield
+    .container= yield
+  %footer.fixed-bottom
+    .container= render partial: 'footer_smart_phone'
