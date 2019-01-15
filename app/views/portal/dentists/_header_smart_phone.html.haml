@@ -1,7 +1,6 @@
 .row.mb-3
-  .col-12.text-center
-    = image_tag('https://placehold.jp/350x40.png?text=いしがき歯科ロゴ',
-      alt: 'いしがき歯科ロゴ', class: 'img-fluid')
+  .col-4.text-center
+    = image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
 .row.mb-3
   .col-12.text-center
     = image_tag('https://placehold.jp/350x100.png?text=診療日時',
@@ -10,5 +9,24 @@
   .col-12.text-center
     = image_tag('https://placehold.jp/350x200.png?text=医院画像',
       alt: '医院画像', class: 'img-fluid')
-.row
-  .col-12.text-center= 'メニューエリア'
+
+.row.mb-3
+  .col-12
+    %nav.navbar.navbar-expand.navbar-light.mb-3.pr-0.pl-0
+      #navbar.collapse.navbar-collapse
+        %ul.navbar-nav.mx-auto
+          %li.nav-item.active
+            %a.nav-link{:href => "#"}
+              トップ
+          %li.nav-item
+            %a.nav-link.pl-1{:href => "#"}
+              院長紹介
+          %li.nav-item
+            %a.nav-link.pl-1{:href => "#"}
+              こだわり
+          %li.nav-item
+            %a.nav-link.pl-1{:href => "#"}
+              求人
+          %li.nav-item
+            %a.nav-link{:href => "#"}
+              医院紹介
