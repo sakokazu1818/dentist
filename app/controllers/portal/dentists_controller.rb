@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Portal::DentistsController < ApplicationController
-  before_action :set_portal_dentist, only: [:show, :edit, :update, :destroy]
+  before_action :set_portal_dentist, only: %i[show edit update destroy]
 
   # GET /portal/dentists
   # GET /portal/dentists.json
@@ -11,8 +13,7 @@ class Portal::DentistsController < ApplicationController
 
   # GET /portal/dentists/1
   # GET /portal/dentists/1.json
-  def show
-  end
+  def show; end
 
   # GET /portal/dentists/new
   def new
@@ -20,8 +21,7 @@ class Portal::DentistsController < ApplicationController
   end
 
   # GET /portal/dentists/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /portal/dentists
   # POST /portal/dentists.json
@@ -64,13 +64,14 @@ class Portal::DentistsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_portal_dentist
-      @portal_dentist = Portal::Dentist.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def portal_dentist_params
-      params.fetch(:portal_dentist, {})
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_portal_dentist
+    @portal_dentist = Portal::Dentist.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def portal_dentist_params
+    params.fetch(:portal_dentist, {})
+  end
 end
