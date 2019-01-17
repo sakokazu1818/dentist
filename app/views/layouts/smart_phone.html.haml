@@ -2,7 +2,7 @@
 %html
   %head
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
-    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+    %meta{content: "width=device-width, initial-scale=1, shrink-to-fit=no", name: "viewport"}
     %title Dentist
     = csrf_meta_tags
     = csp_meta_tag
@@ -10,7 +10,7 @@
     = javascript_include_tag 'application'
   %header
     .container= render partial: 'header_smart_phone'
-  %body
+  %body.pb-5
     .container#main= yield
   %footer.fixed-bottom
     .container= render partial: 'footer_smart_phone'
