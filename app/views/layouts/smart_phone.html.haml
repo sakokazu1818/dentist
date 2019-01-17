@@ -10,7 +10,7 @@
     = javascript_include_tag 'application'
   %header
     .container= render partial: 'header_smart_phone'
-  %body.pb-5
+  %body
     .container#main= yield
-  %footer.fixed-bottom
+  %footer.mt-5.fixed-bottom
     .container= render partial: 'footer_smart_phone'
