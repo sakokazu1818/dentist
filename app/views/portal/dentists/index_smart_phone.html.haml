@@ -26,10 +26,11 @@
     - medical_contents.each do |medical_content|
       .row.mr-1.ml-1.mb-3
         .col-6.border
-          %h5.col-12= medical_content[0]
+          %h5.col-12= medical_content.first
           診療内容について
+        - next if medical_content.second.nil?
         .col-6.border
-          %h5.col-12= medical_content[1]
+          %h5.col-12= medical_content.second
           診療内容について
 .row.pb-5.hospital-introduction
   .col-12
