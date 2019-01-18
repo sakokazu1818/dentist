@@ -15,3 +15,6 @@ $ bundle exec rubocop
 ```
 $ bundle exec rubocop -a
 ```
+
+### webpack
+bin/webpack-dev-server
