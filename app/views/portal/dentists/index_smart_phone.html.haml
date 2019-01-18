@@ -24,13 +24,13 @@
     %h4 診療内容
     - medical_contents = [['診療内容1', '診療内容2'], ['診療内容3', '診療内容4'], ['診療内容5']]
     - medical_contents.each do |medical_content|
-      - medical_content.each do |mi|
-        .col-12.border.mr-1.ml-1.mb-3
-          .row
-            %h5.col-12= mi
-          .row
-            .col-12
-              診療内容について
+      .row.mr-1.ml-1.mb-3
+        .col-6.border
+          %h5.col-12= medical_content[0]
+          診療内容について
+        .col-6.border
+          %h5.col-12= medical_content[1]
+          診療内容について
 .row.pb-5.hospital-introduction
   .col-12
     %h4 院内紹介
