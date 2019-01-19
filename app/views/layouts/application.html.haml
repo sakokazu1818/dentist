@@ -8,5 +8,9 @@
     = csp_meta_tag
     = javascript_pack_tag 'application'
     = stylesheet_pack_tag 'application'
+  %header
+    .container= render partial: 'header'
   %body
-    = yield
+    #main= yield
+  %footer.mt-5.fixed-bottom
+    .container= render partial: 'footer'

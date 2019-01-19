@@ -1,0 +1,26 @@
+.row.mb-3
+  .col-4.text-center
+    = image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
+  .col-8
+    = image_tag('medical_hours.png', alt: '診療時間', class: 'img-fluid')
+.row.mb-3
+  .col-12.text-center
+    = image_tag('clinic.png', alt: '医院', class: 'img-fluid')
+%nav.navbar.navbar-expand.navbar-light
+  #navbar.collapse.navbar-collapse
+    %ul.navbar-nav.mx-auto
+      %li.nav-item.active
+        %a.nav-link{:href => "#"}
+          トップ
+      %li.nav-item
+        %a.nav-link.pl-1{:href => "#"}
+          院長紹介
+      %li.nav-item
+        %a.nav-link.pl-1{:href => "#"}
+          こだわり
+      %li.nav-item
+        %a.nav-link.pl-1{:href => "#"}
+          求人
+      %li.nav-item
+        %a.nav-link{:href => "#"}
+          医院紹介
