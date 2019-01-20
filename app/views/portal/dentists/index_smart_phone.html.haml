@@ -26,12 +26,18 @@
     - medical_contents.each do |medical_content|
       .row.mr-1.ml-1.mb-3
         .col-6.border
-          %h5.col-12= medical_content.first
-          診療内容について
-        - next if medical_content.second.nil?
-        .col-6.border
-          %h5.col-12= medical_content.second
-          診療内容について
+          .row
+            %h5.col-12= medical_content.first
+          .row
+            .col-12
+              診療内容について
+        .col-6{class: medical_content.second.nil? ? '' : 'border'}
+          - next if medical_content.second.nil?
+          .row
+            %h5.col-12= medical_content.second
+          .row
+            .col-12
+              診療内容について
 .row.pb-5.hospital-introduction
   .col-12
     %h4 院内紹介
