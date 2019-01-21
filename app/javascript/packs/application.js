@@ -7,5 +7,6 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-import 'src/application' // application.scss の読み込み
+import 'src/application'
 import 'bootstrap/dist/js/bootstrap'
+import './dentists.js'

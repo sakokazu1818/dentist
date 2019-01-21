@@ -5,9 +5,13 @@ html {
 
 	#main {
 		background-color: #ccf4ee;
-	}
 
-	.border {
-		border: thick solid #FFF !important;
+		.border {
+			border: thick solid #FFF !important;
+		}
+
+		#map {
+			height: 10em;
+		}
 	}
 }
