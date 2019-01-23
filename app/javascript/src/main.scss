@@ -9,6 +9,18 @@ html {
 		}
 	}
 
+	.trim {
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+
+		.img-wave {
+			height: 2em;
+			max-width: 500px;
+			overflow: hidden;
+		}
+	}
+
 	.concept {
 		background-color: #ccf4ee;
 	}
