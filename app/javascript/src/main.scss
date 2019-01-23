@@ -3,15 +3,27 @@ html {
 	width: 100%;
 	height: 100%;
 
-	#main {
+	.concept {
+		background-color: #ccf4ee;
+	}
+
+	.sticking {
+		background-color: #ABEDE3;
+	}
+
+	.medical-contents {
 		background-color: #ccf4ee;
 
-		.border {
-			border: thick solid #FFF !important;
+		.medical_content {
 		}
+	}
 
-		#map {
-			height: 10em;
-		}
+	.border {
+		border: thick solid #FFF !important;
+	}
+
+	#map {
+		height: 10em;
+		margin-bottom: 9em;
 	}
 }

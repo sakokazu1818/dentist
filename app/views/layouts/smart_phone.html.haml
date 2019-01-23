@@ -10,8 +10,8 @@
     = stylesheet_pack_tag 'application'
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAQDWU6bng3D3hHKS_vzFXljtLXG589wpk"
   %header
-    .container= render partial: 'header_smart_phone'
-  %body
-    .container#main= yield
-  %footer.mt-5.fixed-bottom
-    .container= render partial: 'footer_smart_phone'
+    .container.content= render partial: 'header_smart_phone'
+    .container
+      %nav.navbar.navbar-expand.navbar-light.pr-2= render partial: 'navbar_smart_phone'
+  %body= yield
+  %footer.fixed-bottom= render partial: 'footer_smart_phone'

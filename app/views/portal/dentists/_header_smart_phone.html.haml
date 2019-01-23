@@ -1,29 +1,13 @@
-.row.mb-3
+.row
   .col-4.text-center
     = image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
-.row.mb-3
-  .col-12
-    = image_tag('medical_hours.png', alt: '診療時間', class: 'img-fluid')
-.row.mb-3
+  .col-8.text-center.d-flex.align-items-center.query
+    診察のご予約・お問い合わせはこちら
+    %br
+    0567-22-3977
+.row
   .col-12.text-center
     = image_tag('clinic.png', alt: '医院', class: 'img-fluid')
 .row
-  .col-12
-    %nav.navbar.navbar-expand.navbar-light.pr-0.pl-0
-      #navbar.collapse.navbar-collapse
-        %ul.navbar-nav.mx-auto
-          %li.nav-item.active
-            %a.nav-link{:href => "#"}
-              トップ
-          %li.nav-item
-            %a.nav-link.pl-1{:href => "#"}
-              院長紹介
-          %li.nav-item
-            %a.nav-link.pl-1{:href => "#"}
-              こだわり
-          %li.nav-item
-            %a.nav-link.pl-1{:href => "#"}
-              求人
-          %li.nav-item
-            %a.nav-link{:href => "#"}
-              医院紹介
+  .col-12.text-right
+    = image_tag('medical_hours.png', alt: '診療時間', class: 'medical-hours')

@@ -1,3 +1,17 @@
 header{
-  background-color: #FFF;
+  .content {
+    background-color: #ccf4ee;
+
+    .query {
+      font-size: 0.8em;
+    }
+
+    .medical-hours {
+      height: 6em;
+    }
+    
+  }
+  .nav-link-icon {
+    width: 2em;
+  }
 }

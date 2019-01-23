@@ -1,53 +1,55 @@
-.row.pt-3.pb-3.concept
-  .col-12
-    %h4 コンセプト
-    .row.mr-1.ml-1
-      .col-12 このたび、津島市大和町（津島市総合保健福祉センター西隣り）にて、のだ歯科クリニック(旧 野田歯科医院）をリニューアルオープンさせていただくことになりました。
-    .row.mr-1.ml-1
-      .col-12 生まれ育ったこの地で開業することが子供の頃からの夢であり、ようやく想いを実現することができました。
-    .row.mr-1.ml-1
-      .col-12 祖父の代より続いた地域医療を引き継ぎ、また新しい風を吹き込んで、地域の皆様が笑顔になっていただける歯科医院を目指していきます。
-.row.pb-3.sticking
-  .col-12
-    %h4 こだわり
-    - sticking = ['こだわり1', 'こだわり2', 'こだわり3', 'こだわり4', 'こだわり5']
-    - sticking.each do |s|
-      .row.border.mr-1.ml-1.mb-3
-        .col-12
-          .row
-            %h5.col-12= s
-          .row
-            .col-12
-              こだわりについてこだわりについてこだわりについてこだわりについてこだわりについてこだわりについてこだわりについてこだわりについて
-.row.pb-3.medical-contents
-  .col-12
-    %h4 診療内容
-    - medical_contents = [['診療内容1', '診療内容2'], ['診療内容3', '診療内容4'], ['診療内容5']]
-    - medical_contents.each do |medical_content|
-      .row.mr-1.ml-1.mb-3
-        .col-6.border
-          .row
-            %h5.col-12= medical_content.first
-          .row
-            .col-12
-              診療内容について
-        .col-6{class: medical_content.second.nil? ? '' : 'border'}
-          - next if medical_content.second.nil?
-          .row
-            %h5.col-12= medical_content.second
-          .row
-            .col-12
-              診療内容について
-.row.pb-3.hospital-introduction
-  .col-12
-    %h4 院内紹介
-    - hospital_introduction = ['院内紹介1', '院内紹介2', '院内紹介3', '院内紹介4', '院内紹介5']
-    - hospital_introduction.each do |h|
-      .row.border.mr-1.ml-1.mb-3
-        .col-12
-          .row
-            %h5.col-12= h
-          .row
-            .col-12
-              院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介
-.row.mb-5.mr-1.ml-1#map
+.container.concept
+  .row.pt-3.pb-3
+    .col-12
+      %h4 コンセプト
+      .row.mr-1.ml-1
+        .col-12 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      .row.mr-1.ml-1
+        .col-12 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      .row.mr-1.ml-1
+        .col-12 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+.container.sticking
+  .row.pb-3
+    .col-12
+      %h4 いしがき歯科のこだわり
+      - sticking = ['こだわり1', 'こだわり2', 'こだわり3', 'こだわり4', 'こだわり5']
+      - sticking.each do |s|
+        .row.mr-1.ml-1.mb-3
+          .col-12
+            = image_tag('p1.png', alt: 'いしがき歯科', class: 'img-fluid')
+.container.medical-contents
+  .row.pb-3
+    .col-12
+      %h4 診療内容
+      - medical_contents = [['診療内容1', '診療内容2'], ['診療内容3', '診療内容4'], ['診療内容5']]
+      - medical_contents.each do |medical_content|
+        .row.mr-1.ml-1.mb-3
+          .col-6.medical_content.border
+            .row
+              %h5.col-12= medical_content.first
+            .row
+              .col-12
+                診療内容について
+          .col-6{class: medical_content.second.nil? ? '' : 'border'}
+            - next if medical_content.second.nil?
+            .row
+              %h5.col-12= medical_content.second
+            .row
+              .col-12
+                診療内容について
+
+.container.hospital-introduction
+  .row.pb-3
+    .col-12
+      %h4 院内紹介
+      - hospital_introduction = ['院内紹介1', '院内紹介2', '院内紹介3', '院内紹介4', '院内紹介5']
+      - hospital_introduction.each do |h|
+        .row.border.mr-1.ml-1.mb-3
+          .col-12
+            .row
+              %h5.col-12= h
+            .row
+              .col-12
+                院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介
+.container
+  .row.mr-1.ml-1#map
