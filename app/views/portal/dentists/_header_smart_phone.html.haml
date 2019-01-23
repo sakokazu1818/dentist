@@ -1,13 +1,17 @@
-.row
-  .col-4.text-center
-    = image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
-  .col-8.text-center.d-flex.align-items-center.query
-    診察のご予約・お問い合わせはこちら
-    %br
-    0567-22-3977
-.row
-  .col-12.text-center
-    = image_tag('clinic.png', alt: '医院', class: 'img-fluid')
-.row
-  .col-12.text-right
-    = image_tag('medical_hours.png', alt: '診療時間', class: 'medical-hours')
+.container.content
+  .row
+    .col-4.text-center
+      = image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
+    .col-8.text-center.d-flex.align-items-center.query
+      診察のご予約・お問い合わせはこちら
+      %br
+      0567-22-3977
+.container.content
+  .row
+    .col-12.text-center
+      = image_tag('clinic.png', alt: '医院', class: 'img-fluid')
+.container.content
+  .row
+    .col-12.text-right
+      = image_tag('medical_hours.png', alt: '診療時間', class: 'medical-hours')
+.trim.mb-3= image_tag('wave.png', alt: 'いしがき歯科', class: 'img-wave')

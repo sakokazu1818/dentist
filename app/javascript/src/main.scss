@@ -3,6 +3,12 @@ html {
 	width: 100%;
 	height: 100%;
 
+	.news {
+		ul.box {
+			overflow-y:scroll;
+		}
+	}
+
 	.concept {
 		background-color: #ccf4ee;
 	}
@@ -20,6 +26,12 @@ html {
 
 	.border {
 		border: thick solid #FFF !important;
+	}
+
+	.news-table {
+		border: thick solid #000;
+		overflow-y:scroll;
+		height: 200px;
 	}
 
 	#map {

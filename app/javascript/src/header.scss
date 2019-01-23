@@ -9,9 +9,27 @@ header{
     .medical-hours {
       height: 6em;
     }
-    
+
   }
+
+  .trim {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .img-wave {
+      height: 2em;
+      max-width: 500px;
+      overflow: hidden;
+    }
+  }
+
   .nav-link-icon {
     width: 2em;
+  }
+
+  .nav-text {
+    font-size: 2vh;
   }
 }
