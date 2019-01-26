@@ -1,4 +1,4 @@
-header{
+header {
   .content {
     background-color: #ccf4ee;
 
@@ -6,10 +6,14 @@ header{
       font-size: 0.8em;
     }
 
-    .medical-hours {
-      height: 6em;
-    }
+  }
 
+  .clinic-img-wrapper {
+    height: 14em;
+
+    #clinic-img {
+      height: 14em;
+    }
   }
 
   .trim {

@@ -1,4 +1,6 @@
 $(() => {
+  let $body = $('body')
+
   // 住所
   const location = { lat: 35.187666, lng: 136.737804 }
   const map = new google.maps.Map(document.getElementById('map'), { zoom: 15, center: location })
@@ -18,4 +20,25 @@ $(() => {
   marker.addListener('click', () => {
     infowindow.open(map, marker)
   })
+
+  function chengeClinicImg(img) {
+    $($body).find('#clinic-img').fadeOut(1000, function() {
+      $(this).attr('src', img).on('load', function() {
+        $(this).fadeIn()
+      })
+    })
+  }
+
+  let count = 1
+  let imgId = ['#clinic1', '#clinic2', '#clinic3', '#clinic4', '#clinic5']
+  let id = setInterval(
+    function() {
+      chengeClinicImg($($body).find(imgId[count]).attr('src'))
+      count += 1
+
+      if (imgId.length <= count) {
+        count = 0
+      }
+    }, 5000
+  )
 })

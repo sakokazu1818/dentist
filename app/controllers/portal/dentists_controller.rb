@@ -7,6 +7,8 @@ class Portal::DentistsController < ApplicationController
   # GET /portal/dentists.json
   def index
     @portal_dentists = []
+    @contents = [['当院について', '院長紹介', '施設案内', '診察の流れ'],
+      ['訪問診察', '診療時間、アクセス', '採用情報']]
 
     render :index_smart_phone, layout: 'smart_phone.html.haml' if request.smart_phone?
   end

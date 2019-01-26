@@ -1,17 +1,22 @@
+- (1..5).each do |i|
+  .d-none= image_tag("clinic#{i}.jpg", alt: '医院', id: "clinic#{i}")
+
 .container.content
   .row
     .col-4.text-center
       = image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
-    .col-8.text-center.d-flex.align-items-center.query
+.container.content
+  .row
+    .col-12.text-center.d-flex.align-items-center.query
       診察のご予約・お問い合わせはこちら
       %br
       0567-22-3977
 .container.content
   .row
-    .col-12.text-center
-      = image_tag('clinic.png', alt: '医院', class: 'img-fluid')
+    .col-6= image_tag('medical_hours.png', alt: '診療時間', class: 'img-fluid')
+    .col-6.text-center ドクターズファイル
 .container.content
   .row
-    .col-12.text-right
-      = image_tag('medical_hours.png', alt: '診療時間', class: 'medical-hours')
+    .col-12.text-center.clinic-img-wrapper
+      = image_tag('clinic1.jpg', alt: '医院', id: 'clinic-img')
 .trim.mb-3= image_tag('wave.png', alt: 'いしがき歯科', class: 'img-wave')
