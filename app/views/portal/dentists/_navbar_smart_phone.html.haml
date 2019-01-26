@@ -3,6 +3,10 @@
     - contents.each do |c|
       %li.nav-item.text-center.active
         = link_to '#', class: 'nav-link' do
-          = image_tag 'icon_home.png', class: 'nav-link-icon'
+          - if c[:img_name].kind_of?(Array)
+            = image_tag c[:img_name].first, class: 'nav-link-icon'
+            = image_tag c[:img_name].second, class: 'nav-link-icon'
+          - else
+            = image_tag c[:img_name], class: 'nav-link-icon'
           %br
-          .nav-text= c
+          .nav-text= c[:text]
