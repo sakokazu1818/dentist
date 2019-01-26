@@ -3,9 +3,16 @@ html {
 	width: 100%;
 	height: 100%;
 
+	h4 {
+		font-weight: 700;
+		color: #69390e;
+	}
+
 	.news {
-		ul.box {
+		.news-table {
+			border: thick solid #ABEDE3;
 			overflow-y:scroll;
+			height: 200px;
 		}
 	}
 
@@ -21,7 +28,8 @@ html {
 		}
 	}
 
-	.concept {
+	.concept,
+	.hospital-introduction {
 		background-color: #ccf4ee;
 	}
 
@@ -30,20 +38,11 @@ html {
 	}
 
 	.medical-contents {
-		background-color: #ccf4ee;
-
-		.medical_content {
-		}
+		background-color: #F7E69E;
 	}
 
 	.border {
 		border: thick solid #FFF !important;
-	}
-
-	.news-table {
-		border: thick solid #000;
-		overflow-y:scroll;
-		height: 200px;
 	}
 
 	#map {
