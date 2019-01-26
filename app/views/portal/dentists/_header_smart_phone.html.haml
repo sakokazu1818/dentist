@@ -1,17 +1,15 @@
 - (1..5).each do |i|
   .d-none= image_tag("clinic#{i}.jpg", alt: '医院', id: "clinic#{i}")
 
-.container.content
+.container.content.pt-3
   .row
+    .col-8.text-left.clinic-info
+      = 'いしがき歯科'
+      %br= 'TEL 0567-22-3977'
+      = '住所 愛知県津島市寺前町３丁目21-１'
     .col-4.text-center
       = image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
-.container.content
-  .row
-    .col-12.text-center.d-flex.align-items-center.query
-      診察のご予約・お問い合わせはこちら
-      %br
-      0567-22-3977
-.container.content
+.container.content.pt-2
   .row
     .col-6= image_tag('medical_hours.png', alt: '診療時間', class: 'img-fluid')
     .col-6.text-center ドクターズファイル
