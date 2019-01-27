@@ -4,6 +4,7 @@ AllCops:
     - 'bin/*'
     - 'db/**/*'
     - 'config/**/*'
+    - 'node_modules/**/*'
 
 # 日本語コメントを許可
 Style/AsciiComments:

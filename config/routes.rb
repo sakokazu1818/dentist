@@ -5,5 +5,6 @@ Rails.application.routes.draw do
 
   namespace :portal do
     resources :dentists
+    get '/index2', to: 'dentists#index2'
   end
 end
