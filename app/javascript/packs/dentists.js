@@ -1,5 +1,5 @@
 $(() => {
-  let $body = $('body')
+  const $body = $('body')
 
   // 住所
   const location = { lat: 35.187666, lng: 136.737804 }
@@ -22,17 +22,17 @@ $(() => {
   })
 
   function chengeClinicImg(img) {
-    $($body).find('#clinic-img').fadeOut(1000, function() {
-      $(this).attr('src', img).on('load', function() {
+    $($body).find('#clinic-img').fadeOut(1000, function () {
+      $(this).attr('src', img).on('load', function () {
         $(this).fadeIn()
       })
     })
   }
 
   let count = 1
-  let imgId = ['#clinic1', '#clinic2', '#clinic3', '#clinic4', '#clinic5']
-  let id = setInterval(
-    function() {
+  const imgId = ['#clinic1', '#clinic2', '#clinic3', '#clinic4', '#clinic5']
+  setInterval(
+    () => {
       chengeClinicImg($($body).find(imgId[count]).attr('src'))
       count += 1
 
