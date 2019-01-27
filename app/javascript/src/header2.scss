@@ -1,0 +1,53 @@
+#sp2 {
+  header {
+    .content {
+      background-color: #ccf4ee;
+
+      .clinic-info {
+        font-size: 0.8em;
+        color: #69390e;
+        font-weight: bolder;
+
+        h1 {
+          font-size: 2.5em;
+          font-weight: bold;
+        }
+      }
+
+      .img-medical-hours {
+        width: 100%;
+      }
+
+      .img-doctor-file {
+        padding-top: 1.3em;
+        width: 100%;
+      }
+    }
+
+    .clinic-img-wrapper {
+      height: 14em;
+    }
+
+    .trim {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .img-wave {
+        height: 2em;
+        max-width: 500px;
+        overflow: hidden;
+      }
+    }
+
+    .nav-link-icon {
+      width: 2em;
+    }
+
+    .nav-text {
+      font-size: 2vh;
+      color: #69390e;
+    }
+  }
+}

@@ -34,7 +34,7 @@ class Portal::DentistsController < ApplicationController
        { text: '採用情報', img_name: 'icon_job.png' }]
     ]
 
-    render :index_smart_phone, layout: 'smart_phone.html.haml' if request.smart_phone?
+    render :index_smart_phone, layout: 'smart_phone2.html.haml' if request.smart_phone?
   end
 
   # GET /portal/dentists/1
