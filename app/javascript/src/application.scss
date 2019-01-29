@@ -1,4 +1,11 @@
+@font-face {
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  src: url('../../assets/fonts/KosugiMaru-Regular.ttf') format("opentype");
+}
+
 @import '~bootstrap/dist/css/bootstrap';
+
 @import './header.scss';
 @import './main.scss';
 @import './footer.scss';
