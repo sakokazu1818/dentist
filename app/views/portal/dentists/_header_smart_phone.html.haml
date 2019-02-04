@@ -12,7 +12,10 @@
 .container.content.pt-2
   .row
     .col-8= image_tag('medical_hours.png', alt: '診療時間', class: 'img-medical-hours')
-    .col-4.align-items-end= image_tag("doctor's _file.png", alt: '医師について', class: 'img-doctor-file')
+    .col-4
+      .row
+        .col-12.text-center.link-director-introduction 院長紹介ページへ
+        .col-12.text-center= image_tag("doctor's _file.png", alt: '医師について', class: 'img-doctor-file')
 .container.content.pb-3
   .row
     .col-12.text-center.clinic-img-wrapper

@@ -2,37 +2,26 @@
 
 class Portal::DentistsController < ApplicationController
   before_action :set_portal_dentist, only: %i[show edit update destroy]
+  before_action :set_index_variable, only: %i[index index2 index3 index4]
 
   # GET /portal/dentists
   # GET /portal/dentists.json
   def index
-    @portal_dentists = []
-    @contents = [
-      [{ text: '当院について', img_name: 'icon_clinic.png' },
-       { text: '院長紹介', img_name: 'icon_doctor.png' },
-       { text: '施設案内', img_name: 'icon_facilities-guide.png' },
-       { text: '診察の流れ', img_name: 'icon_medical_flow.png' }],
-      [{ text: '訪問診察', img_name: 'icon_visit_consultation.png' },
-       { text: '診療時間、アクセス', img_name: ['icon_medical_hours.png',
-                                                'icon_access.png'] },
-       { text: '採用情報', img_name: 'icon_job.png' }]
-    ]
 
     render :index_smart_phone, layout: 'smart_phone.html.haml' if request.smart_phone?
   end
 
   def index2
-    @portal_dentists = []
-    @contents = [
-      [{ text: '当院について', img_name: 'icon_clinic.png' },
-       { text: '院長紹介', img_name: 'icon_doctor.png' },
-       { text: '施設案内', img_name: 'icon_facilities-guide.png' },
-       { text: '診察の流れ', img_name: 'icon_medical_flow.png' }],
-      [{ text: '訪問診察', img_name: 'icon_visit_consultation.png' },
-       { text: '診療時間、アクセス', img_name: ['icon_medical_hours.png',
-                                                'icon_access.png'] },
-       { text: '採用情報', img_name: 'icon_job.png' }]
-    ]
+
+    render :index_smart_phone, layout: 'smart_phone2.html.haml' if request.smart_phone?
+  end
+
+  def index3
+
+    render :index_smart_phone, layout: 'smart_phone2.html.haml' if request.smart_phone?
+  end
+
+  def index4
 
     render :index_smart_phone, layout: 'smart_phone2.html.haml' if request.smart_phone?
   end
@@ -94,6 +83,20 @@ class Portal::DentistsController < ApplicationController
   # Use callbacks to share common setup or constraints between actions.
   def set_portal_dentist
     @portal_dentist = Portal::Dentist.find(params[:id])
+  end
+
+  def set_index_variable
+    @portal_dentists = []
+    @contents = [
+      [{ text: '当院について', img_name: 'icon_clinic.png' },
+       { text: '院長紹介', img_name: 'icon_doctor.png' },
+       { text: '施設案内', img_name: 'icon_facilities-guide.png' },
+       { text: '診察の流れ', img_name: 'icon_medical_flow.png' }],
+      [{ text: '訪問診察', img_name: 'icon_visit_consultation.png' },
+       { text: '診療時間、アクセス', img_name: ['icon_medical_hours.png',
+                                                'icon_access.png'] },
+       { text: '採用情報', img_name: 'icon_job.png' }]
+    ]
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.

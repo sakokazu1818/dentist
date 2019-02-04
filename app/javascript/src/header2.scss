@@ -19,9 +19,14 @@
       }
 
       .img-doctor-file {
-        padding-top: 1.3em;
-        width: 100%;
+        width: 3em;
       }
+
+  		.link-director-introduction {
+        font-size: 2vw;
+        font-family: 'Kosugi Maru', sans-serif;
+        color: #69390e;
+  		}
     }
 
     .clinic-img-wrapper {
@@ -49,5 +54,11 @@
       font-size: 2vh;
       color: #69390e;
     }
+  }
+}
+
+#pc {
+  header{
+    background-color: #FFF;
   }
 }
