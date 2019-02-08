@@ -1,7 +1,19 @@
 #sp {
-  footer{
+  footer {
     .footer-img {
       width: 100%;
+    }
+  }
+}
+
+#sp2 {
+  footer {
+    height: 5em;
+    line-height: 1em;
+    color: #FFF;
+    background-color: #18a09a;
+    .tel {
+      font-size: 3em;
     }
   }
 }

@@ -1,11 +1,12 @@
 #sp2 {
   header {
     .content {
-      background-color: #ccf4ee;
+      // TODO
+      // background-color: #FFF;
 
       .clinic-info {
         font-size: 0.8em;
-        color: #69390e;
+        color: #000;
         font-weight: bolder;
 
         h1 {
@@ -24,13 +25,13 @@
 
   		.link-director-introduction {
         font-size: 2vw;
-        font-family: 'Kosugi Maru', sans-serif;
-        color: #69390e;
+        font-family: 'Noto Serif SC', sans-serif;
+        color: #000;
   		}
     }
 
     .clinic-img-wrapper {
-      height: 14em;
+      height: 15em;
     }
 
     .trim {
@@ -52,7 +53,9 @@
 
     .nav-text {
       font-size: 2vh;
-      color: #69390e;
+      color: #000;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
     }
   }
 }

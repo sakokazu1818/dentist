@@ -11,10 +11,7 @@
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAQDWU6bng3D3hHKS_vzFXljtLXG589wpk"
   #sp2
     %header
-      = render partial: 'header_smart_phone'
-      .container
-        - @contents.each do |c|
-          %nav.navbar.navbar-expand.navbar-light.pr-0.pl-0
-            = render partial: 'navbar_smart_phone', locals: { contents: c }
+      = render partial: 'header_smart_phone2'
+      .container= render partial: 'navbar_smart_phone2', locals: { contents: @contents }
     %body= yield
-    %footer.fixed-bottom= render partial: 'footer_smart_phone'
+    %footer.fixed-bottom= render partial: 'footer_smart_phone2'
