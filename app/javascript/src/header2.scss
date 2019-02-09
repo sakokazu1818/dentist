@@ -2,7 +2,7 @@
   header {
     .content {
       // TODO
-      // background-color: #FFF;
+      background-color: #FFF;
 
       .clinic-info {
         font-size: 0.8em;
@@ -23,10 +23,22 @@
         width: 3em;
       }
 
-  		.link-director-introduction {
-        font-size: 2vw;
+  		.link-directori-ntroduction {
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+        padding-top: 1em;
+        height: 3.8em;
+        width: 90%;
+        font-size: 0.8em;
+        line-height: 0.5em;
+        background-image: url('../../assets/images/wood-texture3.png');
+        background-size: cover;
         font-family: 'Noto Serif SC', sans-serif;
-        color: #000;
+        color: #FFF;
+
+        .icon {
+          text-align: right;
+        }
   		}
     }
 
