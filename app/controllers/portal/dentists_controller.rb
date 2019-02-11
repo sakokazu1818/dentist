@@ -2,28 +2,13 @@
 
 class Portal::DentistsController < ApplicationController
   before_action :set_portal_dentist, only: %i[show edit update destroy]
-  before_action :set_index_variable, only: %i[index index2 index3 index4]
+  before_action :set_index_variable, only: %i[index]
 
   # GET /portal/dentists
   # GET /portal/dentists.json
   def index
 
     render :index_smart_phone, layout: 'smart_phone.html.haml' if request.smart_phone?
-  end
-
-  def index2
-
-    render :index_smart_phone, layout: 'smart_phone2.html.haml' if request.smart_phone?
-  end
-
-  def index3
-
-    render :index_smart_phone, layout: 'smart_phone2.html.haml' if request.smart_phone?
-  end
-
-  def index4
-
-    render :index_smart_phone, layout: 'smart_phone2.html.haml' if request.smart_phone?
   end
 
   # GET /portal/dentists/1

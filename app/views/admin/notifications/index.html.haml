@@ -1,0 +1,21 @@
+%h2 お知らせ一覧
+
+%table
+  %thead
+    %tr
+      %th Text
+      %th
+      %th
+      %th
+
+  %tbody
+    - @admin_notifications.each do |admin_notification|
+      %tr
+        %td= admin_notification.text
+        %td= link_to 'Show', admin_notification
+        %td= link_to 'Edit', edit_admin_notification_path(admin_notification)
+        %td= link_to 'Destroy', admin_notification, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Notification', new_admin_notification_path, class: 'btn btn-primary'

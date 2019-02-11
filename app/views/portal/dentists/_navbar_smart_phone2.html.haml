@@ -1,7 +1,0 @@
-%nav.navbar.navbar-expand.navbar-light.pr-0.pl-0.mt-3
-  .collapse.navbar-collapse
-    %ul.navbar-nav.mx-auto
-      - contents.flatten.each do |c|
-        %li.nav-item.text-center.active
-          = link_to '#', class: 'nav-link' do
-            .nav-text= c[:text]
