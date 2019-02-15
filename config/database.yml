@@ -50,5 +50,3 @@ test:
 production:
   <<: *default
   database: dentist_production
-  username: dentist
-  password: <%= ENV['DENTIST_DATABASE_PASSWORD'] %>
