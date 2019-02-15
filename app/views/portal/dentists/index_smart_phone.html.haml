@@ -7,9 +7,9 @@
       .news-table
         %table.table
           %tbody
-            - 10.times do
+            - @notification.each do |n|
               %tr
-                %td= simple_format('お知らせ')
+                %td= simple_format(n.text)
 .trim.mt-3= image_tag('wave2.png', alt: 'いしがき歯科', class: 'img-wave')
 .container.concept
   .row.pb-3

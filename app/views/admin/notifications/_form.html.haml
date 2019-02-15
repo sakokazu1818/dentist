@@ -5,9 +5,9 @@
       %ul
         - @admin_notification.errors.full_messages.each do |message|
           %li= message
-
-  .field
-    = f.label :text
-    = f.text_area :text
+  .form-group
+    = f.label :text, 'お知らせ内容'
+    = f.text_area :text, class: 'form-control'
   .actions
-    = f.submit 'Save'
+    = link_to '戻る', admin_notifications_path, class: 'btn btn-info'
+    = f.submit '保存', class: 'btn btn-primary'

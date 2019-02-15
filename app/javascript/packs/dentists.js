@@ -1,5 +1,8 @@
 $(() => {
   const $body = $('body')
+  if ($body.find('#admin').length > 0) {
+    return
+  }
 
   // 住所
   const location = { lat: 35.187666, lng: 136.737804 }

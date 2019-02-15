@@ -7,6 +7,7 @@ class Portal::DentistsController < ApplicationController
   # GET /portal/dentists
   # GET /portal/dentists.json
   def index
+    @notification = Admin::Notification.all
 
     render :index_smart_phone, layout: 'smart_phone.html.haml' if request.smart_phone?
   end

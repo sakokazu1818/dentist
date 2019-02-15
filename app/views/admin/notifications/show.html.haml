@@ -1,9 +1,11 @@
-%p#notice= notice
+%h2 プレビュー
+%p#notice
+  - if notice.present?
+    .alert.alert-success= notice
 
-%p
-  %b Text:
-  = @admin_notification.text
+.card.mb-3
+  %h5.card-header お知らせ内容
+  .card-body= simple_format(@admin_notification.text)
 
-= link_to 'Edit', edit_admin_notification_path(@admin_notification)
-\|
-= link_to 'Back', admin_notifications_path
+= link_to '戻る', admin_notifications_path, class: 'btn btn-info'
+= link_to '編集', edit_admin_notification_path(@admin_notification), class: 'btn btn-success'

@@ -25,7 +25,7 @@ class Admin::NotificationsController < ApplicationController
   # POST /admin/notifications
   # POST /admin/notifications.json
   def create
-    "モノ\r\nジ\rトリ\nテトラ".gsub(/\R/, "\n")
+    # raise "#{admin_notification_params[:text].gsub(/\R/, "\n")}"
     @admin_notification = Admin::Notification.new(admin_notification_params)
 
     respond_to do |format|

@@ -8,7 +8,7 @@
     = csp_meta_tag
     = javascript_pack_tag 'application'
     = stylesheet_pack_tag 'application'
-    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAQDWU6bng3D3hHKS_vzFXljtLXG589wpk"
-  .container
-    %header= render partial: './admin/common/heder'
-    %body= yield
+  #admin
+    .container
+      %header= render partial: './admin/common/heder'
+      %body= yield

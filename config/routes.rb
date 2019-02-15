@@ -3,6 +3,7 @@
 Rails.application.routes.draw do
   root 'portal/dentists#index'
   namespace :admin do
+    root 'notifications#index'
     resources :notifications
   end
 
