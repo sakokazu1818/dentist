@@ -13,12 +13,9 @@
 .container.content.pt-2
   .row
     .col-8= image_tag('medical_hours.png', alt: '診療時間', class: 'img-medical-hours')
-    .col-4.mt-3
-      .link-directori-ntroduction
-        院長紹介
-        .icon
-          %i.fas.fa-arrow-alt-circle-right
-        .pl-1= 'ページ'
+    .col-4.pt-2
+      .link-directori-ntroduction= image_tag('directori-ntroduction.png',
+        alt: '院長紹介ページへ', class: 'directori-ntroduction-img')
 .container.content.pb-3
   .row
     .col-12.text-center.clinic-img-wrapper
