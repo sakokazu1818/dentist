@@ -14,8 +14,9 @@
   .row
     .col-8= image_tag('medical_hours.png', alt: '診療時間', class: 'img-medical-hours')
     .col-4.pt-2
-      .link-directori-ntroduction= image_tag('directori-ntroduction.png',
-        alt: '院長紹介ページへ', class: 'directori-ntroduction-img')
+      .link-directori-ntroduction= link_to image_tag('directori-ntroduction.png',
+        alt: '院長紹介ページへ', class: 'directori-ntroduction-img'),
+        'https://doctorsfile.jp/h/110499/df/1/'
 .container.content.pb-3
   .row
     .col-12.text-center.clinic-img-wrapper

@@ -1,8 +1,13 @@
+- (1..5).each do |i|
+  .d-none= image_tag("clinic#{i}.jpg", alt: '医院', id: "clinic#{i}")
+
 .row.mb-3
-  .col-4.text-center
-    = image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
-  .col-8
-    = image_tag('medical_hours.png', alt: '診療時間', class: 'img-fluid')
+  %h1.col-6= image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
+  .col-3= image_tag('medical_hours.png', alt: '診療時間', class: 'img-fluid')
+  .col-3.contact-us.mt-3
+    %p.text= 'ご予約・お問い合わせはこちら'
+    %i.fas.fa-phone-volume
+    = '0567-22-3977'
 .row.mb-3
   .col-12.text-center
     = image_tag('clinic1.jpg', alt: '医院', class: 'img-fluid')
