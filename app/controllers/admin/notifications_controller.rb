@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class Admin::NotificationsController < ApplicationController
   layout 'admin'
-  before_action :set_admin_notification, only: [:show, :edit, :update, :destroy]
+  before_action :set_admin_notification, only: %i[show edit update destroy]
 
   # GET /admin/notifications
   # GET /admin/notifications.json
@@ -10,8 +12,7 @@ class Admin::NotificationsController < ApplicationController
 
   # GET /admin/notifications/1
   # GET /admin/notifications/1.json
-  def show
-  end
+  def show; end
 
   # GET /admin/notifications/new
   def new
@@ -19,8 +20,7 @@ class Admin::NotificationsController < ApplicationController
   end
 
   # GET /admin/notifications/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /admin/notifications
   # POST /admin/notifications.json
@@ -64,13 +64,14 @@ class Admin::NotificationsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_admin_notification
-      @admin_notification = Admin::Notification.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def admin_notification_params
-      params.require(:admin_notification).permit(:text)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_admin_notification
+    @admin_notification = Admin::Notification.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def admin_notification_params
+    params.require(:admin_notification).permit(:text)
+  end
 end
