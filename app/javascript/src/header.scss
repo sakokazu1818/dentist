@@ -76,9 +76,13 @@
   font-weight: bolder;
 
   header{
-    padding-top: 3em;
-    background-color: #ccf4ee;
+    background-color: #FFF;
     line-height: 1em;
+
+    .business-information {
+      padding-top: 3em;
+      background-color: #ccf4ee;
+    }
 
     h1 {
       font-weight: bolder;
@@ -95,6 +99,34 @@
       .text {
         font-size: 1.2vw;
       }
+    }
+
+    .trim {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .img-wave {
+        height: 4em;
+        overflow: hidden;
+      }
+    }
+
+    .nav-link-icon {
+      padding-left: 1em;
+      padding-right: 1em;
+      width: 5.5em;
+    }
+
+    .navbar-collapse {
+      background-color: #FFF;
+      padding-top: 2em;
+      padding-bottom: 4em;
+    }
+
+    .nav-text {
+      color: #69390e;
     }
   }
 }

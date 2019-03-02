@@ -13,7 +13,7 @@
     %header
       = render partial: 'header_smart_phone'
       .container
-        - @contents.each do |c|
+        - @contents_sp.each do |c|
           %nav.navbar.navbar-expand.navbar-light.pr-0.pl-0
             = render partial: 'navbar_smart_phone', locals: { contents: c }
     %body= yield
