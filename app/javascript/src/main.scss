@@ -31,8 +31,7 @@ html {
 			position: relative;
 
 			.img-wave {
-				height: 2em;
-				max-width: 500px;
+        width: 140%;
 				overflow: hidden;
 			}
 		}
@@ -66,6 +65,25 @@ html {
   #pc {
 		font-family: 'Kosugi Maru', sans-serif;
 
+		.news {
+			.news-table {
+				border: thick solid #ABEDE3;
+				overflow-y:scroll;
+				height: 200px;
+			}
+		}
+
+		.trim {
+			overflow: hidden;
+			width: 100%;
+			position: relative;
+
+			.img-wave {
+				width: 140%;
+				overflow: hidden;
+			}
+		}
+
 		#main {
 			background-color: #ccf4ee;
 
@@ -74,7 +92,8 @@ html {
 			}
 
 			#map {
-				height: 10em;
+				height: 20em;
+				margin-bottom: 10em;
 			}
 		}
 	}

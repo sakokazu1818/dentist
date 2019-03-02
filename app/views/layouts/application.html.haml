@@ -18,7 +18,6 @@
         - @contents.each do |c|
           %nav.navbar.navbar-expand.navbar-light
             = render partial: 'navber.html.haml', locals: { contents: c }
-    %body
-      #main= yield
+    %body= yield
     %footer.mt-5.fixed-bottom
       .container= render partial: 'footer'
