@@ -8,6 +8,7 @@
     %p.text= 'ご予約・お問い合わせはこちら'
     %i.fas.fa-phone-volume
     = '0567-22-3977'
-.row.pb-3
-  .col-12.text-center
-    = image_tag('clinic1.jpg', alt: '医院', class: 'img-fluid')
+
+.row
+  .col-12.text-center.clinic-img-wrapper
+    = image_tag('clinic1.jpg', alt: '医院', class: 'img-fluid', id: 'clinic-img')
