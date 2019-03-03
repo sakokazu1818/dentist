@@ -1,24 +1,27 @@
 - (1..5).each do |i|
   .d-none= image_tag("clinic#{i}.jpg", alt: '医院', id: "clinic#{i}")
 
-.container.content.pt-3
-  .row
-    .col-8.text-left.clinic-info
-      %h1= 'いしがき歯科'
-      = 'TEL 0567-22-3977'
-      %br
-      .address= '住所 愛知県津島市寺前町３丁目21-１'
-    .col-4.clinic-info
-      = image_tag('logo2.png', alt: 'いしがき歯科', class: 'img-fluid')
-.container.content.pt-2
-  .row
-    .col-8= image_tag('medical_hours.png', alt: '診療時間', class: 'img-medical-hours')
-    .col-4.pt-2
-      .link-directori-ntroduction= link_to image_tag('directori-ntroduction.png',
-        alt: '院長紹介ページへ', class: 'directori-ntroduction-img'),
-        'https://doctorsfile.jp/h/110499/df/1/'
-.container.content.pb-3
-  .row
-    .col-12.text-center.clinic-img-wrapper
-      = image_tag('clinic1.jpg', alt: '医院', class: 'img-fluid', id: 'clinic-img')
+.content.pt-3
+  .container
+    .row
+      .col-8.text-left.clinic-info
+        %h1= 'いしがき歯科'
+        = 'TEL 0567-22-3977'
+        %br
+        .address= '住所 愛知県津島市寺前町３丁目21-１'
+      .col-4.clinic-info
+        = image_tag('logo2.png', alt: 'いしがき歯科', class: 'img-fluid')
+.content.pt-2
+  .container
+    .row
+      .col-8= image_tag('medical_hours.png', alt: '診療時間', class: 'img-medical-hours')
+      .col-4.pt-2
+        .link-directori-ntroduction= link_to image_tag('directori-ntroduction.png',
+          alt: '院長紹介ページへ', class: 'img-fluid'),
+          'https://doctorsfile.jp/h/110499/df/1/'
+.content.pb-3
+  .container
+    .row
+      .col-12.text-center.clinic-img-wrapper
+        = image_tag('clinic1.jpg', alt: '医院', class: 'img-fluid', id: 'clinic-img')
 .trim.mb-3= image_tag('wave.png', alt: 'いしがき歯科', class: 'img-wave')
