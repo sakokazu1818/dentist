@@ -31,11 +31,6 @@ Metrics/BlockLength:
     - 'spec/factories/**/*'
     - 'spec/lib/**/*'
 
-Metrics/AbcSize:
-  Max: 20
-  Exclude:
-    - 'app/helpers/application_helper.rb'
-
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
     '%w': ()
