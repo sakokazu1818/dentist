@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   namespace :admin do
     root 'notifications#index'
     resources :notifications
+    resource :sessions, only: [:new, :create, :destroy]
   end
 
   namespace :portal do
