@@ -37,3 +37,5 @@ $ bundle exec yarn run eslint 対象ファイルのパス
 ```
 $ bundle exec yarn run eslint --fix 対象ファイルのパス
 ```
+
+/usr/local/bin/bundle exec rails s -e production
