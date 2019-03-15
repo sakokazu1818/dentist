@@ -19,6 +19,8 @@ $ bundle exec rubocop -a
 ### webpack
 bin/webpack-dev-server
 
+#### 本番
+RAILS_ENV=production bundle exec bin/webpack
 ## heroku
 ### master 以外のブランチデプロイ
 https://qiita.com/wroc/items/d15b1015c899b0cf77da
