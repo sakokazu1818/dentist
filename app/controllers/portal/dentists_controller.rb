@@ -87,19 +87,6 @@ class Portal::DentistsController < ApplicationController
     ]
   end
 
-  def set_contents_sp
-    @contents_sp = [
-      [{ text: '当院について', img_name: 'icon_clinic.png' },
-       { text: '院長紹介', img_name: 'icon_doctor.png' },
-       { text: '施設案内', img_name: 'icon_facilities-guide.png' },
-       { text: '診察の流れ', img_name: 'icon_medical_flow.png' }],
-      [{ text: '訪問診察', img_name: 'icon_visit_consultation.png' },
-       { text: '診療時間、アクセス', img_name: ['icon_medical_hours.png',
-                                                'icon_access.png'] },
-       { text: '採用情報', img_name: 'icon_job.png' }]
-    ]
-  end
-
   # Never trust parameters from the scary internet, only allow the white list through.
   def portal_dentist_params
     params.fetch(:portal_dentist, {})
