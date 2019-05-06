@@ -72,6 +72,10 @@ html {
 			color: #69390e;
 		}
 
+		h5 {
+			color: #69390e;
+		}
+
 		.news {
 			.news-table {
 				border: thick solid #ABEDE3;
@@ -114,8 +118,23 @@ html {
 			border-radius: 0.4em;
 		}
 
-		.about-text {
+		.pb-10 {
 			padding-bottom: 10em;
+		}
+
+		.stripe{
+		  position: relative;
+		  padding: 0.3em;
+		}
+
+		.stripe:after {
+		  content: '';
+		  position: absolute;
+		  left: 0;
+		  bottom: 0;
+		  width: 100%;
+		  height: 7px;
+		  background: repeating-linear-gradient(-45deg, #1aa596, #1aa596 2px, white 2px, white 4px);
 		}
 
 		#map {
