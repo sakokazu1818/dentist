@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   namespace :portal do
     resources :dentists
     resources :abouts, only: :index
+    resources :director_introducings, only: :index
   end
 end
