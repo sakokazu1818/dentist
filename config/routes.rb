@@ -12,5 +12,6 @@ Rails.application.routes.draw do
     resources :dentists
     resources :abouts, only: :index
     resources :director_introducings, only: :index
+    resources :facilities, only: :index
   end
 end

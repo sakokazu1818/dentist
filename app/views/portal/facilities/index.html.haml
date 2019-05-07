@@ -1,0 +1,19 @@
+%h1 Listing portal_facilities
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @portal_facilities.each do |portal_facility|
+      %tr
+        %td= link_to 'Show', portal_facility
+        %td= link_to 'Edit', edit_portal_facility_path(portal_facility)
+        %td= link_to 'Destroy', portal_facility, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Facility', new_portal_facility_path

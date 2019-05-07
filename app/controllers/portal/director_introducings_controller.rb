@@ -2,7 +2,7 @@ class Portal::DirectorIntroducingsController < ApplicationController
   # GET /portal/director_introducings
   # GET /portal/director_introducings.json
   def index
-    @portal_abouts = []
+    @portal_director_introducings = []
 
     if request.smart_phone?
       set_contents_sp
