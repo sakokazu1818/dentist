@@ -13,5 +13,6 @@ Rails.application.routes.draw do
     resources :abouts, only: :index
     resources :director_introducings, only: :index
     resources :facilities, only: :index
+    resources :flow_examinations, only: :index
   end
 end
