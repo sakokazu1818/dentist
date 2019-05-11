@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Portal::VisitToVisitsController < ApplicationController
   # GET /portal/visit_to_visits
   # GET /portal/visit_to_visits.json

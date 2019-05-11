@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Portal::FlowExaminationsController < ApplicationController
   # GET /portal/flow_examinations
   # GET /portal/flow_examinations.json

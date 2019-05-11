@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Portal::FacilitiesController < ApplicationController
   # GET /portal/facilities
   # GET /portal/facilities.json

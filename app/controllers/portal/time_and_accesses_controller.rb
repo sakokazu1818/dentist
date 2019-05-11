@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Portal::TimeAndAccessesController < ApplicationController
   # GET /portal/time_and_accesses
   # GET /portal/time_and_accesses.json

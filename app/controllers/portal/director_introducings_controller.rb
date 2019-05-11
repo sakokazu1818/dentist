@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Portal::DirectorIntroducingsController < ApplicationController
   # GET /portal/director_introducings
   # GET /portal/director_introducings.json

@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe "portal/recruits/index", type: :view do
+RSpec.describe 'portal/recruits/index', type: :view do
   before(:each) do
     assign(:portal_recruits, [
-      Portal::Recruit.create!(),
-      Portal::Recruit.create!()
-    ])
+             Portal::Recruit.create!,
+             Portal::Recruit.create!
+           ])
   end
 
-  it "renders a list of portal/recruits" do
+  it 'renders a list of portal/recruits' do
     render
   end
 end

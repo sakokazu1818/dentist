@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Portal::RecruitsController < ApplicationController
   # GET /portal/recruits
   # GET /portal/recruits.json
