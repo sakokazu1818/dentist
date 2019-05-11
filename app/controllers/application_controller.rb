@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
        { text: '院長紹介', img_name: 'icon_doctor.png', link: portal_director_introducings_path },
        { text: '施設案内', img_name: 'icon_facilities-guide.png', link: portal_facilities_path },
        { text: '診察の流れ', img_name: 'icon_medical_flow.png', link: portal_flow_examinations_path }],
-      [ { text: '訪問診察', img_name: 'icon_visit_consultation.png', link: '#' },
+      [ { text: '訪問診察', img_name: 'icon_visit_consultation.png', link: portal_visit_to_visits_path },
        { text: '診療時間、アクセス', img_name: ['icon_medical_hours.png',
                                                 'icon_access.png'], link: '#' },
        { text: '採用情報', img_name: 'icon_job.png', link: '#' }]

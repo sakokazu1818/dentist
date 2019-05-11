@@ -14,5 +14,6 @@ Rails.application.routes.draw do
     resources :director_introducings, only: :index
     resources :facilities, only: :index
     resources :flow_examinations, only: :index
+    resources :visit_to_visits, only: :index
   end
 end
