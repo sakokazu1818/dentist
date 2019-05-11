@@ -15,5 +15,7 @@ Rails.application.routes.draw do
     resources :facilities, only: :index
     resources :flow_examinations, only: :index
     resources :visit_to_visits, only: :index
+    resources :time_and_accesses, only: :index
+    resources :recruits, only: :index
   end
 end
