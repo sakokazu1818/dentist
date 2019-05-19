@@ -102,6 +102,17 @@ html {
 
 		.sticking {
 			background-color: #ccf4ee;
+
+			.text {
+				font-size: 4vw;
+			}
+
+			.sticking-img {
+				width: 100%;
+				height: 4em;
+				object-fit: cover;
+				border-radius: 0.4em;
+			}
 			// background-color: #ABEDE3;
 		}
 
@@ -115,6 +126,12 @@ html {
 
 		.bg-green-area {
 			background-color: #ccf4ee;
+			padding: 0.4em;
+			border-radius: 0.4em;
+		}
+
+		.bg-white-area {
+			background-color: #FFF;
 			padding: 0.4em;
 			border-radius: 0.4em;
 		}
