@@ -143,8 +143,29 @@ html {
 		}
 
 		footer {
+			background:linear-gradient(0deg, #fac72e 0%, #fac72e 74%, #00000000 74%, #00000000 100%);
+			.footer-to-home {
+				margin-top: 1.4em;
+			}
+
 			.footer-img {
-				width: 100%;
+				background:linear-gradient(0deg, #2fa295 0%, #2fa295 74%, #00000000 74%, #00000000 100%);
+				img {
+					height: 5em;
+				}
+			}
+
+			.footer-icon {
+				color: #FFF;
+				font-size: 2em;
+				padding-left: 0.18em;
+			}
+
+			.footer-txt {
+				font-family: 'Kosugi Maru', sans-serif;
+				color: #FFF;
+				font-size: 1em;
+				font-weight: bolder;
 			}
 		}
 	}
