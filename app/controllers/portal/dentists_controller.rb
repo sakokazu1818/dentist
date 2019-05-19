@@ -7,7 +7,11 @@ class Portal::DentistsController < ApplicationController
   # GET /portal/dentists
   # GET /portal/dentists.json
   def index
-    @notification = Admin::Notification.all
+    # TDOO
+    # @notification = Admin::Notification.all
+    @notification = [Admin::Notification.new(created_at: Time.now, text: 'おしらせ1'),
+      Admin::Notification.new(created_at: Time.now, text: 'おしらせ2'),
+      Admin::Notification.new(created_at: Time.now, text: 'おしらせ3')]
 
     render :index_smart_phone, layout: 'smart_phone.html.haml' if request.smart_phone?
   end
