@@ -89,5 +89,11 @@
 -#               .row
 -#                 .col-12
 -#                   院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介
+
+:css
+  .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.embed-container.mt-4.mr-3.ml-3
+  %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!4v1558424278271!6m8!1m7!1sCAoSLEFGMVFpcFBrazIybnR3OGxZaUtubWpNaHlpSmV3Y2N5YnpyeGxtU2R0eFpM!2m2!1d35.18772203479!2d136.73787814582!3f145.00485225452962!4f-9.72329895937304!5f0.7820865974627469", :style => "border:0", :width => "600"}
+
 .container
   .row.mt-4.mr-1.ml-1#map
