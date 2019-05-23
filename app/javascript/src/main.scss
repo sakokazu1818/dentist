@@ -46,6 +46,11 @@ html {
 				height: 15em;
 			}
 
+			#clinic-img {
+				height: 15em;
+				width: auto;
+			}
+
 			.trim {
 				overflow: hidden;
 				width: 100%;
@@ -63,8 +68,14 @@ html {
 			}
 
 			.nav-text {
-				font-size: 1.8vh;
+				font-size: 3vw;
 				color: #69390e;
+			}
+
+			.nav-item {
+				max-width: 8em;
+				min-width: 5.8em;
+				height: 3em;
 			}
 		}
 
@@ -158,7 +169,7 @@ html {
 
 		#map {
 			height: 10em;
-			margin-bottom: 40%;
+			margin-bottom: 30%;
 		}
 
 		footer {
