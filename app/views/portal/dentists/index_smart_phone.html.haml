@@ -29,30 +29,36 @@
     .row.pb-3.pt-4
       .col-12
         %h4 いしがき歯科の特徴
-        - sticking = [{title: '①	車が停めやすい広々駐車場', img: '駐車場画像',
-            text: "最大駐車数20台。\n 広い駐車スペースで安心した通院を実現。"},
-          {title: '②	徹底した衛生管理', img: '院内画像',
-            text: '清潔な院内環境作りと最高レベルの滅菌機器で、徹底した衛生管理に勤めています。'},
-          {title: '③	丁寧なカウンセリング', img: 'カウンセリング画像',
-            text: "初診時には必ずカウンセリングルームにてカウンセリングを実施。\n患者様の不安の解消・ベストな治療法の選択を行なっております。"},
-          {title: '④	口腔内画像の保管', img: '口腔画像', text: "口腔内写真をカルテと共に保管。\n 次回治療に活用致します。"},
-          {title: '⑤	検査結果のお渡し', img: '検査結果画像', text: '患者様自身でご自身の口腔状況を把握していただきやすいよう。検査結果を印刷してお渡ししております。'},
-          {title: '⑥	できる限り痛くない麻酔', img: '麻酔画像',
-            text: "麻酔処置が痛いという患者様も少なくありません。\n 当院では麻酔処置もできる限り痛くないよう務めております。"},
-          {title: '⑦	将来を見越した治療', img: '麻酔画像', text: "1, できる限り歯を削らない\n2, できる限り神経は抜かない\n3, できる限り抜歯しない\n当院では以上の事を心がけ将来を見越した治療を行なっています。"},
-          {title: '⑧	定期検診の実施', img: '定期検診画像', text: '定期検診を行う事で予防治療にも力を入れています。'},
-          {title: '⑨	訪問診療の実施', img: '訪問診療画像', text: 'お体が不自由な方や、お子様の為当院では訪問診療も実施しております。'},
-          {title: '⑩	治療に関する事前同意の徹底', img: '同意画像', text: '当院では必ず同意を得た上で治療を行います。医師による勝手な判断での治療は行いません。'},
-          {title: '⑪	広々とした診療室', img: '診療室画像', text: "広々とした診療室をご用意させていただいております。ベビーカーと一緒に診療室へ入れます。\nベビーカーや車椅子のお客様もご安心してご来院ください。"}]
+    - sticking = @sticking.each_slice(2).to_a
     .row.pb-3.pl-2.pr-2
       - sticking.each do |s|
-        .col-12.bg-white-area.mb-3
-          .row
-            .col-12
-              .h5= s[:title]
-            .col-12.pb-2
-              = image_tag("http://placehold.jp/250x50.png?text=#{s[:img]}", alt: '医院', class: 'sticking-img')
-            .col-12.text=simple_format(s[:text])
+        .col-6.mb-3
+          .bg-white-area
+            .row.pb-3
+              .col-12.title= s[0][:title]
+            .row
+              .col-12.pb-2= image_tag(s[0][:img], alt: '医院', class: 'sticking-img')
+            .row
+              .col-12.text=simple_format(s[0][:text])
+        - break if s[1].nil?
+        .col-6.mb-3
+          .bg-white-area
+            .row.pb-2
+              .col-12.title= s[1][:title]
+            .row
+              .col-12.pb-2= image_tag(s[1][:img], alt: '医院', class: 'sticking-img')
+            .row
+              .col-12.text=simple_format(s[1][:text])
+
+    -# .row.pb-3.pl-2.pr-2
+    -#   - sticking.each do |s|
+    -#     .col-12.bg-white-area.mb-3
+    -#       .row
+    -#         .col-12
+    -#           .h5= s[:title]
+    -#         .col-12.pb-2
+    -#           = image_tag("http://placehold.jp/250x50.png?text=#{s[:img]}", alt: '医院', class: 'sticking-img')
+    -#         .col-12.text=simple_format(s[:text])
 -# .medical-contents
 -#   .container
 -#     .row.pb-3.pt-4
@@ -90,10 +96,20 @@
 -#                 .col-12
 -#                   院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介
 
+.container.mt-5
+  .row.mr-1.ml-1#map
+
 :css
   .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 .embed-container.mt-4.mr-3.ml-3
   %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!4v1558424278271!6m8!1m7!1sCAoSLEFGMVFpcFBrazIybnR3OGxZaUtubWpNaHlpSmV3Y2N5YnpyeGxtU2R0eFpM!2m2!1d35.18772203479!2d136.73787814582!3f145.00485225452962!4f-9.72329895937304!5f0.7820865974627469", :style => "border:0", :width => "600"}
 
-.container
-  .row.mt-4.mr-1.ml-1#map
+.container.footer-doctor-introduction.mt-5
+  .row.mb-3
+    .col-1
+    .col-10= image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
+  .row.mb-2
+    .col-12.text-center= '電話番号をタップでして発信できます。'
+  .row
+    .col-1
+    .col-10.text-center.tel.pl-0.pr-0= link_to 'TEL 0567-22-3977', 'tel:0567-22-3977'

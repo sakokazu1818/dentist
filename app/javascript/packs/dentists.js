@@ -4,6 +4,12 @@ $(() => {
     return
   }
 
+  let $bg_yellow = $($body).find('.bg-yellow-area');
+  if ($bg_yellow.length > 0) {
+    console.log($bg_yellow)
+    $($bg_yellow).css({'background-image':'url(' + $($body).find('#bg_yellow').attr('src') + ')'});
+  }
+
   // 住所
   const location = { lat: 35.187666, lng: 136.737804 }
   const map = new google.maps.Map(document.getElementById('map'), { zoom: 15, center: location })

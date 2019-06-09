@@ -116,7 +116,11 @@ html {
 			background-color: #ccf4ee;
 
 			.text {
-				font-size: 4vw;
+				font-size: 1vh;
+			}
+
+			.title {
+				font-size: 2.5vw;
 			}
 
 			.sticking-img {
@@ -143,8 +147,26 @@ html {
 		}
 
 		.bg-white-area {
+			height: 13em;
 			background-color: #FFF;
 			padding: 0.4em;
+			border-radius: 0.4em;
+		}
+
+		.bg-yellow-area {
+			background-image: '';
+			padding: 0.4em;
+			border-radius: 0.4em;
+		}
+
+		.border_radius {
+	    border-radius: 35px;
+		}
+
+		.border-green-area {
+			background-color: #FFF;
+			padding: 0.4em;
+			border-style: solid; border-color: #c0e5df;
 			border-radius: 0.4em;
 		}
 
@@ -168,8 +190,22 @@ html {
 		}
 
 		#map {
-			height: 10em;
-			margin-bottom: 30%;
+			height: 13em;
+			margin-bottom: 10%;
+		}
+
+		.footer-doctor-introduction {
+			margin-bottom: 7em;
+			.tel {
+				background-color: #69390e;
+				font-size: 2em;
+
+				a {
+					display: block;
+					text-decoration: none;
+				  color: #FFF;
+				}
+			}
 		}
 
 		footer {
