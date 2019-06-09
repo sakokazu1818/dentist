@@ -37,7 +37,7 @@
             .row.pb-3
               .col-12.title= s[0][:title]
             .row
-              -# .col-12.pb-2= image_tag(s[0][:img], alt: '医院', class: 'sticking-img')
+              .col-12.pb-2= image_tag(s[0][:img], alt: '医院', class: 'sticking-img')
             .row
               .col-12.text=simple_format(s[0][:text])
             - if s[0][:details]
@@ -50,7 +50,7 @@
             .row.pb-2
               .col-12.title= s[1][:title]
             .row
-              -# .col-12.pb-2= image_tag(s[1][:img], alt: '医院', class: 'sticking-img')
+              .col-12.pb-2= image_tag(s[1][:img], alt: '医院', class: 'sticking-img')
             .row
               .col-12.text=simple_format(s[1][:text])
             - if s[1][:details]
