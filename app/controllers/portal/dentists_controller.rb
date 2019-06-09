@@ -29,13 +29,33 @@ class Portal::DentistsController < ApplicationController
     #   {title: '⑩	事前同意の徹底', img: '同意画像', text: '当院では必ず同意を得た上で治療を行います。医師による勝手な判断での治療は行いません。'},
     #   {title: '⑪	広々とした診療室', img: '診療室画像', text: "広々とした診療室をご用意させていただいております。ベビーカーと一緒に診療室へ入れます。\nベビーカーや車椅子のお客様もご安心してご来院ください。"}]
 
-    @sticking = [{
-      title: '① 車が停めやすい広々駐車場', img: 'sticking1',text: "最大駐車数20台。\n 広い駐車スペースで安心した通院を実現。", details: false},
-      {title: '② 徹底した衛生管理', img: 'sticking2', text: '清潔な院内環境作りと最高レベルの滅菌機器で、徹底した衛生管理に勤めています。', details: true},
-      {title: '③ 検査結果のお渡し', img: 'sticking3', text: '患者様自身でご自身の口腔状況を把握していただきやすいよう。検査結果を印刷してお渡ししております。', details: false},
-      {title: '④ 将来を見越した治療', img: 'sticking4', text: "1, できる限り歯を削らない\n2, できる限り神経は抜かない\n3, できる限り抜歯しない\n当院では以上の事を心がけ将来を見越した治療を行なっています。", details: false},
-      {title: '⑤ 訪問診療の実施', img: 'sticking5', text: 'お体が不自由な方や、お子様の為当院では訪問診療も実施しております。', details: true},
-      {title: '⑥ 広々とした診療室', img: 'sticking6', text: "広々とした診療室をご用意させていただいております。ベビーカーと一緒に診療室へ入れます。\nベビーカーや車椅子のお客様もご安心してご来院ください。", details: false}]
+    @sticking = [
+      { title: '① 車が停めやすい広々駐車場',
+        img: 'sticking1',
+        text: "最大駐車数20台。\n 広い駐車スペースで安心した通院を実現。",
+        details: false },
+      { title: '② 徹底した衛生管理',
+        img: 'sticking2',
+        text: '清潔な院内環境作りと最高レベルの滅菌機器で、徹底した衛生管理に勤めています。',
+        details: true },
+      { title: '③ 検査結果のお渡し',
+        img: 'sticking3',
+        text: '患者様自身でご自身の口腔状況を把握していただきやすいよう。検査結果を印刷してお渡ししております。',
+        details: false },
+      { title: '④ 将来を見越した治療',
+        img: 'sticking4',
+        text: "1, できる限り歯を削らない\n2, できる限り神経は抜かない\n3, できる限り抜歯しない\n当院では以上の事を心がけ将来を見越した治療を行なっています。",
+        details: false },
+      { title: '⑤ 訪問診療の実施',
+        img: 'sticking5',
+        text: 'お体が不自由な方や、お子様の為当院では訪問診療も実施しております。',
+        details: true},
+      {title: '⑥ 広々とした診療室',
+        img: 'sticking6',
+        text: "広々とした診療室をご用意させていただいております。ベビーカーと一緒に診療室へ入れます。\nベビーカーや車椅子のお客様もご安心してご来院ください。",
+        details: false }
+      ]
+
     render :index_smart_phone, layout: 'smart_phone.html.haml' if request.smart_phone?
   end
 

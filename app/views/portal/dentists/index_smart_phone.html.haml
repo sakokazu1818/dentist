@@ -40,10 +40,10 @@
               .col-12.pb-2= image_tag(s[0][:img], alt: '医院', class: 'sticking-img')
             .row
               .col-12.text=simple_format(s[0][:text])
-            -# - if s[0][:details]
-            -#   .row
-            -#     .col-4
-            -#     .col-8.text.text-right=link_to '詳細はこちら', '#'
+            - if s[0][:details]
+              .row
+                .col-4
+                .col-8.text.text-right=link_to '詳細はこちら', '#'
         - break if s[1].nil?
         .col-6.mb-3
           .bg-white-area
@@ -53,10 +53,10 @@
               .col-12.pb-2= image_tag(s[1][:img], alt: '医院', class: 'sticking-img')
             .row
               .col-12.text=simple_format(s[1][:text])
-            -# - if s[1][:details]
-            -#   .row
-            -#     .col-4
-            -#     .col-8.text.text-right=link_to '詳細はこちら', '#'
+            - if s[1][:details]
+              .row
+                .col-4
+                .col-8.text.text-right=link_to '詳細はこちら', '#'
 
     -# .row.pb-3.pl-2.pr-2
     -#   - sticking.each do |s|
