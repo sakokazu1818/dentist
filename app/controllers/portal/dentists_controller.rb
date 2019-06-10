@@ -77,10 +77,12 @@ class Portal::DentistsController < ApplicationController
 
   def set_index_variable
     @portal_dentists = []
-    return set_contents_sp if request.smart_phone?
-
-    set_contents
-    set_sticking
+    if request.smart_phone?
+      set_contents_sp
+      set_sticking
+    else
+      set_contents
+    end
   end
 
   def set_contents
