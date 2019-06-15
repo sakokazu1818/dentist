@@ -3,6 +3,7 @@
     = link_to 'tel:0567223977' do
       = image_tag('footer.png', alt: '診察のご予約・お問い合わせはこちら', class: 'img-fluid')
   .col-3.footer-to-home.text-center.pl-0
-    %i.fas.fa-home.footer-icon
-    %br
-    .footer-txt= link_to 'ホーム', root_path
+    = link_to root_path do
+      %i.fas.fa-home.footer-icon
+      %br
+      .footer-txt= link_to 'ホーム'

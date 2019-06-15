@@ -212,6 +212,10 @@ html {
 			background:linear-gradient(0deg, #fac72e 0%, #fac72e 74%, #00000000 74%, #00000000 100%);
 			.footer-to-home {
 				margin-top: 1.4em;
+				a {
+					text-decoration: none;
+					color: #FFF;
+				}
 			}
 
 			.footer-img {
@@ -233,6 +237,7 @@ html {
 				font-size: 1em;
 				font-weight: bolder;
 				a {
+					text-decoration: none;
 					color: #FFF;
 				}
 
