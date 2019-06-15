@@ -7,6 +7,11 @@ html {
 		font-family: 'Kosugi Maru', sans-serif;
 		overflow:hidden;
 
+		.attention {
+			color: #FF0000;
+			font-size: 0.7vw;
+		}
+
 		header {
 			.content {
 				background-color: #ccf4ee;
