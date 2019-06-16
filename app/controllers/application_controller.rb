@@ -4,20 +4,22 @@ class ApplicationController < ActionController::Base
   helper_method :logged_in?
 
   def set_contents_sp
+    c_n = controller_name
     @contents_sp = [
       [{ text: '当院について', img_name: 'icon_clinic.png',
-         link: portal_abouts_path },
+         link: c_n == 'abouts' ? '#' : portal_abouts_path },
        { text: '院長紹介', img_name: 'icon_doctor.png',
-         link: portal_director_introducings_path },
+         link: c_n == 'director_introducings' ? '#' : portal_director_introducings_path },
        { text: '施設案内', img_name: 'icon_facilities-guide.png',
-         link: portal_facilities_path },
+         link: c_n == 'facilities' ? '#' : portal_facilities_path },
        { text: '診察の流れ', img_name: 'icon_medical_flow.png',
-         link: portal_flow_examinations_path }],
+         link: c_n == 'flow_examinations' ? '#' : portal_flow_examinations_path }],
       [{ text: '訪問診察', img_name: 'icon_visit_consultation.png',
-         link: portal_visit_to_visits_path },
+         link: c_n == 'visit_to_visits' ? '#' : portal_visit_to_visits_path },
        { text: '診療時間、アクセス', img_name: ['icon_medical_hours.png', 'icon_access.png'],
-         link: portal_time_and_accesses_path },
-       { text: '採用情報', img_name: 'icon_job.png', link: portal_recruits_path }]
+         link: c_n == 'time_and_accesses' ? '#' : portal_time_and_accesses_path },
+       { text: '採用情報', img_name: 'icon_job.png',
+         link: c_n == 'recruits' ? '#' : portal_recruits_path }]
     ]
   end
 
