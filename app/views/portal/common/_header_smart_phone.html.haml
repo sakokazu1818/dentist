@@ -1,5 +1,6 @@
-- (1..5).each do |i|
-  .d-none= image_tag("clinic#{i}.png", alt: '医院', id: "clinic#{i}")
+- if controller.controller_name == 'dentists'
+  - (1..5).each do |i|
+    .d-none= image_tag("clinic#{i}.png", alt: '医院', id: "clinic#{i}")
 
 .content.pt-3
   .container
@@ -20,9 +21,10 @@
         .link-directori-ntroduction= link_to image_tag('directori-ntroduction.png',
           alt: '院長紹介ページへ', class: 'img-fluid'),
           'https://doctorsfile.jp/h/110499/df/1/'
-.content.pb-3
-  .container
-    .row
-      .col-12.text-center.clinic-img-wrapper
-        = image_tag('clinic1.png', alt: '医院', id: 'clinic-img')
+- if controller.controller_name == 'dentists'
+  .content.pb-3
+    .container
+      .row
+        .col-12.text-center.clinic-img-wrapper
+          = image_tag('clinic1.png', alt: '医院', id: 'clinic-img')
 .trim.mb-3= image_tag('wave.png', alt: 'いしがき歯科', class: 'img-wave')
