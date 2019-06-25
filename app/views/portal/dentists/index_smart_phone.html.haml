@@ -28,7 +28,10 @@
   .container
     .row.pb-3.pt-4
       .col-12
-        %h4 いしがき歯科の特徴
+        %h4.border-bottom
+          %span
+            %i.fas.fa-clipboard-check.pb-1
+            %span いしがき歯科の特徴
     - sticking = @sticking.each_slice(2).to_a
     .row.pb-3.pl-2.pr-2
       - sticking.each do |s|
