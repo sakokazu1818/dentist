@@ -23,12 +23,16 @@ html {
 					font-weight: bolder;
 
 					h1 {
-						font-size: 8vw;
+						font-size: 7vw;
 						font-weight: bold;
 					}
 
 					.address {
 						font-size: 3vw;
+					}
+
+					img {
+						max-width: 100%;
 					}
 				}
 
@@ -45,14 +49,18 @@ html {
 					font-family: 'Kosugi Maru', sans-serif;
 					color: #69390e;
 				}
+
+				.link-directori-ntroduction{
+					padding-top: 1.2em;
+				}
 			}
 
 			.clinic-img-wrapper {
-				height: 15em;
+				height: 13em;
 			}
 
 			#clinic-img {
-				height: 15em;
+				height: 13em;
 				width: auto;
 			}
 

@@ -5,24 +5,24 @@
 .content.pt-3
   .container
     .row
-      .col-9.text-left.clinic-info
+      .col-10.text-left.clinic-info
         %h1= 'いしがき歯科'
         -# TODO
         -# = 'TEL 0567-22-3977'
         -# %br
         .address= '住所 愛知県津島市寺前町３丁目21-１'
-      .col-3.clinic-info
-        = image_tag('logo2.png', alt: 'いしがき歯科', class: 'img-fluid')
+      .col-2.pl-0.clinic-info.pt-2
+        = image_tag('logo2.png', alt: 'いしがき歯科', class: '')
 .content
   .container
     .row
-      .col-8= image_tag('medical_hours.png', alt: '診療時間', class: 'img-medical-hours')
-      .col-4.pt-2
+      .col-10= image_tag('hoge.png', alt: '診療時間', class: 'img-medical-hours')
+      .col-2.pl-0
         .link-directori-ntroduction= link_to image_tag('directori-ntroduction.png',
           alt: '院長紹介ページへ', class: 'img-fluid'),
           'https://doctorsfile.jp/h/110499/df/1/'
 - if controller.controller_name == 'dentists'
-  .content.pb-3
+  .content.pb-2
     .container
       .row
         .col-12.text-center.clinic-img-wrapper
