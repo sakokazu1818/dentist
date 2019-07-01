@@ -13,96 +13,31 @@
               %tr
                 %td= simple_format(n.text)
 .trim.mt-3= image_tag('wave2.png', alt: 'いしがき歯科', class: 'img-wave')
--# .concept
--#   .container
--#     .row.pb-3
--#       .col-12
--#         %h4 コンセプト
--#         .row.mr-1.ml-1
--#           .col-12 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
--#         .row.mr-1.ml-1
--#           .col-12 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
--#         .row.mr-1.ml-1
--#           .col-12 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 .sticking
   .container
     .row.pb-3.pt-4
-      .col-12
+      .col-12.pr-3.pl-3
         %h4.border-bottom
           %span
-            %i.fas.fa-clipboard-check.pb-1
+            %i.fas.fa-tooth.fa-rotate-10.pb-1
             %span いしがき歯科の特徴
     - sticking = @sticking.each_slice(2).to_a
     .row.pb-3.pl-2.pr-2
       - sticking.each do |s|
-        .col-6.mb-3
+        .col-6.mb-3.pr-2.pl-2
           .bg-white-area
             .row.pb-3
               .col-12.title= s[0][:title]
             .row
-              .col-12.pb-2= image_tag(s[0][:img], alt: '医院', class: 'sticking-img')
+              .col-12.pb-3= image_tag(s[0][:img], alt: '医院', class: 'sticking-img')
             .row
               .col-12.text=simple_format(s[0][:text])
-            - if s[0][:details]
-              .row
-                .col-4
-                .col-8.text.text-right=link_to '詳細はこちら', '#'
         - break if s[1].nil?
-        .col-6.mb-3
+        .col-6.mb-3.pr-2.pl-2
           .bg-white-area
-            .row.pb-2
+            .row.pb-3
               .col-12.title= s[1][:title]
             .row
-              .col-12.pb-2= image_tag(s[1][:img], alt: '医院', class: 'sticking-img')
+              .col-12.pb-3= image_tag(s[1][:img], alt: '医院', class: 'sticking-img')
             .row
               .col-12.text=simple_format(s[1][:text])
-            - if s[1][:details]
-              .row
-                .col-4
-                .col-8.text.text-right=link_to '詳細はこちら', '#'
-
-    -# .row.pb-3.pl-2.pr-2
-    -#   - sticking.each do |s|
-    -#     .col-12.bg-white-area.mb-3
-    -#       .row
-    -#         .col-12
-    -#           .h5= s[:title]
-    -#         .col-12.pb-2
-    -#           = image_tag("http://placehold.jp/250x50.png?text=#{s[:img]}", alt: '医院', class: 'sticking-img')
-    -#         .col-12.text=simple_format(s[:text])
--# .medical-contents
--#   .container
--#     .row.pb-3.pt-4
--#       .col-12
--#         %h4 診療内容
--#         - medical_contents = [['診療内容1', '診療内容2'], ['診療内容3', '診療内容4'], ['診療内容5', '診療内容6']]
--#         - medical_contents.each do |medical_content|
--#           .row.mr-1.ml-1.mb-3
--#             .col-6.medical_content.border
--#               .row
--#                 %h5.col-12= medical_content.first
--#               .row
--#                 .col-12
--#                   診療内容について
--#             .col-6{class: medical_content.second.nil? ? '' : 'border'}
--#               - next if medical_content.second.nil?
--#               .row
--#                 %h5.col-12= medical_content.second
--#               .row
--#                 .col-12
--#                   診療内容について
--#
--# .hospital-introduction
--#   .container
--#     .row.pb-3.pt-4
--#       .col-12
--#         %h4 院内紹介
--#         - hospital_introduction = ['院内紹介1', '院内紹介2', '院内紹介3', '院内紹介4', '院内紹介5']
--#         - hospital_introduction.each do |h|
--#           .row.border.mr-1.ml-1.mb-3
--#             .col-12
--#               .row
--#                 %h5.col-12= h
--#               .row
--#                 .col-12
--#                   院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介院内紹介
