@@ -6,7 +6,7 @@
   .container
     .row
       .col-10.text-left.clinic-info
-        %h1= 'いしがき歯科'
+        %h1= image_tag('logo-1.png', alt: 'いしがき歯科', class: 'img-fluid')
         = '〒496-0042'
         %br
         .address= '住所 愛知県津島市寺前町３丁目21-１'
@@ -26,4 +26,4 @@
       .row
         .col-12.text-center.clinic-img-wrapper
           = image_tag('clinic1.png', alt: '医院', id: 'clinic-img')
-.trim.mb-1= image_tag('wave.png', alt: 'いしがき歯科', class: 'img-wave')
+-# .trim.mb-1= image_tag('wave.png', alt: 'いしがき歯科', class: 'img-wave')
