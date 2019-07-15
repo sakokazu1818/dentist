@@ -19,6 +19,14 @@ html {
 			padding-bottom: 2em;
 		}
 
+		.tc-b {
+			color: #000;
+		}
+
+		.border-bottom {
+			border-bottom: solid 6px #feed35 !important;
+		}
+
 		.attention {
 			color: #FF0000;
 			font-size: 0.8rem;
@@ -157,10 +165,6 @@ html {
 
 			.fa-clipboard-check {
 				font-size: 10vw;
-			}
-
-			.border-bottom {
-				border-bottom: double 0.6em #FFF !important;
 			}
 
 			.sticking-img {

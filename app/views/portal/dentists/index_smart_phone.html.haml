@@ -1,7 +1,7 @@
 .container.news
   .row.pt-3
-    .col-12.text-center
-      %h4 院長からのメッセージ
+    .col-12.text-left
+      %h4.border-bottom.tc-b 院長からのメッセージ
   .row.pb-3
     .col-12
       .news-table
@@ -19,8 +19,8 @@
       .col-12.pr-3.pl-3
         %h4.border-bottom
           %span
-            %i.fas.fa-tooth.fa-rotate-10.pb-1
-            %span いしがき歯科の特徴
+            %i.fas.fa-tooth.fa-rotate-10.pb-1.tc-b
+            %span.tc-b いしがき歯科の特徴
     - sticking = @sticking.each_slice(2).to_a
     .row.pb-3.pl-2.pr-2
       - sticking.each do |s|
