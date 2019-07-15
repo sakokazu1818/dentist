@@ -36,7 +36,9 @@
         .col-6.mb-3.pr-2.pl-2
           .bg-white-area
             - if s[1][:title].include?('衛生管理')
-              .row.pb-2-0
+              -# TODO
+              -# .row.pb-2-0
+              .row.pb-3
                 .col-12.title= s[1][:title]
             - else
               .row.pb-3
