@@ -35,8 +35,12 @@
         - break if s[1].nil?
         .col-6.mb-3.pr-2.pl-2
           .bg-white-area
-            .row.pb-3
-              .col-12.title= s[1][:title]
+            - if s[1][:title].include?('衛生管理')
+              .row.pb-2-0
+                .col-12.title= s[1][:title]
+            - else
+              .row.pb-3
+                .col-12.title= s[1][:title]
             .row
               .col-12.pb-3= image_tag(s[1][:img], alt: '医院', class: 'sticking-img')
             .row
