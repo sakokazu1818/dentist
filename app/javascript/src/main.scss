@@ -64,12 +64,14 @@ html {
 			}
 
 			.clinic-img-wrapper {
+				overflow: hidden;
 				height: 13em;
+				position: relative;
 			}
 
 			#clinic-img {
 				height: 13em;
-				width: auto;
+				overflow: hidden;
 			}
 
 			.trim {
@@ -89,13 +91,13 @@ html {
 			}
 
 			.nav-text {
-				font-size: 3vw;
+				font-size: 2.5vw;
 				color: #69390e;
 			}
 
 			.nav-item {
 				max-width: 8em;
-				min-width: 5.8em;
+				min-width: 4.8em;
 				height: 3em;
 			}
 		}

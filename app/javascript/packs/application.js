@@ -10,9 +10,9 @@
 import 'src/application'
 import 'bootstrap/dist/js/bootstrap'
 import {} from 'jquery-ujs'
-
-fontawesome.library.add(faSolid, faRegular, faBrands)
-
-fontawesome.dom.i2svg()
+//
+// fontawesome.library.add(faSolid, faRegular, faBrands)
+//
+// fontawesome.dom.i2svg()
 
 import './dentists.js'

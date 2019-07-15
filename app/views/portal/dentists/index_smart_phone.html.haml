@@ -31,7 +31,7 @@
             .row
               .col-12.pb-3= image_tag(s[0][:img], alt: '医院', class: 'sticking-img')
             .row
-              .col-12.text=simple_format(s[0][:text])
+              .col-12.text.p-3=simple_format(s[0][:text])
         - break if s[1].nil?
         .col-6.mb-3.pr-2.pl-2
           .bg-white-area

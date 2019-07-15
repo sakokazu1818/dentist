@@ -6,7 +6,9 @@
   .container
     .row
       .col-10.text-left.clinic-info
-        %h1= image_tag('logo-1.png', alt: 'いしがき歯科', class: 'img-fluid')
+        %h1= link_to image_tag('logo-1.png', alt: 'いしがき歯科',
+          class: 'img-fluid'), root_path
+
         = '〒496-0042'
         %br
         .address= '住所 愛知県津島市寺前町３丁目21-１'
@@ -22,7 +24,7 @@
           'https://doctorsfile.jp/h/110499/df/1/'
 - if controller.controller_name == 'dentists'
   .content.pb-2
-    .container
+    .container-fluid.pr-0.pl-0
       .row
         .col-12.text-center.clinic-img-wrapper
           = image_tag('clinic1.png', alt: '医院', id: 'clinic-img')

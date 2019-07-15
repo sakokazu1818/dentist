@@ -88,7 +88,6 @@ class Portal::DentistsController < ApplicationController
   def set_contents
     @contents = [
       [{ text: '当院について', img_name: 'icon_clinic.png' },
-       { text: '院長紹介', img_name: 'icon_doctor.png' },
        { text: '施設案内', img_name: 'icon_facilities-guide.png' },
        { text: '診察の流れ', img_name: 'icon_medical_flow.png' },
        { text: '訪問診察', img_name: 'icon_visit_consultation.png' },

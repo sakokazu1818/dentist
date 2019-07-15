@@ -13,9 +13,8 @@
     %header
       = render partial: 'portal/common/header_smart_phone'
       .container-fluid.pl-0.pr-0
-        - @contents_sp.each do |c|
-          %nav.navbar.navbar-expand.navbar-light.pr-0.pl-0
-            = render partial: 'portal/common/navbar_smart_phone', locals: { contents: c }
+        %nav.navbar.navbar-expand.navbar-light.pr-0.pl-0
+          = render partial: 'portal/common/navbar_smart_phone', locals: { contents: @contents_sp }
     %body
       = yield
       = render partial: 'portal/common/footer_smart_phone'
