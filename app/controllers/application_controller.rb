@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
         link: c_n == 'abouts' ? '#' : portal_abouts_path },
       { text: '施設案内', img_name: 'icon_facilities-guide.png',
         link: c_n == 'facilities' ? '#' : portal_facilities_path },
-      { text: '診察の流れ', img_name: 'icon_medical_flow.png',
+      { text: '初めての方へ', img_name: 'icon_medical_flow.png',
         link: c_n == 'flow_examinations' ? '#' : portal_flow_examinations_path },
       { text: '訪問診察', img_name: 'icon_visit_consultation.png',
         link: c_n == 'visit_to_visits' ? '#' : portal_visit_to_visits_path },

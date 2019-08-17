@@ -156,6 +156,7 @@ html {
 
 			.title {
 				font-size: 0.75rem;
+				height: 2.8rem;
 			}
 
 			.fa-clipboard-check {
@@ -186,7 +187,14 @@ html {
 		}
 
 		.bg-white-area {
-			height: 16rem;
+			height: 22rem;
+			background-color: #FFF;
+			padding: 0.4em;
+			border-radius: 0.4em;
+		}
+
+		.bg-white-area2 {
+			height: 15rem;
 			background-color: #FFF;
 			padding: 0.4em;
 			border-radius: 0.4em;
@@ -250,13 +258,13 @@ html {
 		.footer-doctor-introduction {
 			margin-bottom: 7em;
 			.tel {
-				background-color: #69390e;
 				font-size: 2em;
 
 				a {
 					display: block;
 					text-decoration: none;
-				  color: #FFF;
+				  color: #000;
+					border-bottom: solid 6px #feed35 !important;
 				}
 			}
 		}

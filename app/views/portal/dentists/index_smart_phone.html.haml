@@ -12,7 +12,6 @@
                 %td= n.created_at.strftime('%Y/%m/%d')
               %tr
                 %td= simple_format(n.text)
--# .trim.mt-3= image_tag('wave2.png', alt: 'いしがき歯科', class: 'img-wave')
 .sticking
   .container
     .row.pb-3.pt-4
@@ -21,29 +20,14 @@
           %span
             %i.fas.fa-tooth.pb-1.tc-b
             %span.tc-b いしがき歯科の特徴
-    - sticking = @sticking.each_slice(2).to_a
+    - sticking = @sticking
     .row.pb-3.pl-2.pr-2
-      - sticking.each do |s|
+      - sticking.each_with_index do |s, i|
         .col-6.mb-3.pr-2.pl-2
-          .bg-white-area
+          %div{class: (i == 0 || i == 1) ? 'bg-white-area' : 'bg-white-area2'}
             .row.pb-3
-              .col-12.title= s[0][:title]
+              .col-12.title= s[:title]
             .row
-              .col-12.pb-3= image_tag(s[0][:img], alt: '医院', class: 'sticking-img')
+              .col-12.pb-3= image_tag(s[:img], alt: '医院', class: 'sticking-img')
             .row
-              .col-12.text.p-3=simple_format(s[0][:text])
-        - break if s[1].nil?
-        .col-6.mb-3.pr-2.pl-2
-          .bg-white-area
-            - if s[1][:title].include?('衛生管理')
-              -# TODO
-              -# .row.pb-2-0
-              .row.pb-3
-                .col-12.title= s[1][:title]
-            - else
-              .row.pb-3
-                .col-12.title= s[1][:title]
-            .row
-              .col-12.pb-3= image_tag(s[1][:img], alt: '医院', class: 'sticking-img')
-            .row
-              .col-12.text=simple_format(s[1][:text])
+              .col-12.text=simple_format(s[:text])
