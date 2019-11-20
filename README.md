@@ -26,6 +26,9 @@ RAILS_ENV=production bundle exec bin/webpack
 https://qiita.com/wroc/items/d15b1015c899b0cf77da
 git push heroku ishigaki:master --force
 
+### log
+$ heroku logs -t 
+
 ### eslint
 
 #### 構文チェック
