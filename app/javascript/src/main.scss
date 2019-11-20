@@ -109,7 +109,7 @@ html {
 
 			.nav-item {
 				max-width: 8em;
-				min-width: 4.8em;
+				min-width: 3.2em;
 				height: 3em;
 			}
 		}
@@ -155,8 +155,13 @@ html {
 			}
 
 			.title {
-				font-size: 0.75rem;
-				height: 2.8rem;
+				font-size: 0.85rem;
+				height: 23vw;
+			}
+
+			.title2 {
+				font-size: 0.85rem;
+				height: 10vw;
 			}
 
 			.fa-clipboard-check {
@@ -187,7 +192,7 @@ html {
 		}
 
 		.bg-white-area {
-			height: 22rem;
+			height: 25rem;
 			background-color: #FFF;
 			padding: 0.4em;
 			border-radius: 0.4em;
@@ -215,6 +220,13 @@ html {
 			padding: 0.4em;
 			border-style: solid; border-color: #c0e5df;
 			border-radius: 0.4em;
+		}
+
+		.imgName {
+			text-align: right;
+			img {
+				height: 3em;
+			}
 		}
 
 		.ct {

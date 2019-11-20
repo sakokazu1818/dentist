@@ -87,26 +87,29 @@ class Portal::DentistsController < ApplicationController
 
   def set_contents
     @contents = [
-      [{ text: '当院について', img_name: 'icon_clinic.png' },
-       { text: '施設案内', img_name: 'icon_facilities-guide.png' },
-       { text: '初めての方へ', img_name: 'icon_medical_flow.png' },
-       { text: '訪問診察', img_name: 'icon_visit_consultation.png' },
-       { text: '診療時間、アクセス', img_name: ['icon_medical_hours.png',
+      [
+        { text: '当院について', img_name: 'icon_clinic.png' },
+        { text: '院長紹介', img_name: 'icon_doctor.png' },
+        { text: '施設案内', img_name: 'icon_facilities-guide.png' },
+        { text: '初めての方へ', img_name: 'icon_medical_flow.png' },
+        { text: '訪問診察', img_name: 'icon_visit_consultation.png' },
+        { text: '診療時間、アクセス', img_name: ['icon_medical_hours.png',
                                                 'icon_access.png'] },
-       { text: '採用情報', img_name: 'icon_job.png' }]
+        { text: '採用情報', img_name: 'icon_job.png' }
+     ]
     ]
   end
 
   def set_sticking
     @sticking = [
       { title: "① 厚生労働省が定める、\nかかりつけ歯科医機能強化型歯科診療所に認定",
-        img: 'https://placehold.jp/150x150.png?text=ダミー',
-        text: "当院は厚労省が定める多くの高度な施設基準や実績をクリアしているため皆様に安心して受診して頂けます。\
+        img: 'かかりつけ機能強化型.JPG',
+        text: "当院は多くの高度な施設基準や実績をクリアしているため皆様に安心して受診して頂けます。\
               またこの基準をクリアしているため、皆様のお口の健康をより詳細に管理する事が可能となりました。\
               \n※この施設基準をクリアしている歯科医院は全国の医院の10%ほどだけです。",
         details: true },
       { title: '② 複数の歯科衛生士の在籍',
-        img: 'https://placehold.jp/150x150.png?text=ダミー',
+        img: '複数の衛生士の在籍.JPG',
         text: "国家資格を有するプロの歯科衛生士があなたのお口の中の健康管理を責任を持って行います。\
               また、複数の衛生士が在籍しておりますので、予約も出来るだけお待たせ致しません。",
         details: true },

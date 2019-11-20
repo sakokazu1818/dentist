@@ -8,6 +8,8 @@ class ApplicationController < ActionController::Base
     @contents_sp = [
       { text: '当院について', img_name: 'icon_clinic.png',
         link: c_n == 'abouts' ? '#' : portal_abouts_path },
+      { text: '院長紹介', img_name: 'icon_doctor.png',
+        link: c_n == 'recruits' ? '#' : portal_director_introducings_path },
       { text: '施設案内', img_name: 'icon_facilities-guide.png',
         link: c_n == 'facilities' ? '#' : portal_facilities_path },
       { text: '初めての方へ', img_name: 'icon_medical_flow.png',
