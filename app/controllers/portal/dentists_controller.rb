@@ -102,7 +102,7 @@ class Portal::DentistsController < ApplicationController
 
   def set_sticking
     @sticking = [
-      { title: "① 厚生労働省が定める、\nかかりつけ歯科医機能強化型歯科診療所に認定",
+      { title: "① かかりつけ歯科医機能強化型歯科診療所に認定",
         img: 'かかりつけ機能強化型.JPG',
         text: "当院は多くの高度な施設基準や実績をクリアしているため皆様に安心して受診して頂けます。\
               またこの基準をクリアしているため、皆様のお口の健康をより詳細に管理する事が可能となりました。\
@@ -118,7 +118,7 @@ class Portal::DentistsController < ApplicationController
         text: '清潔な院内環境作りと最高レベルの滅菌機器で、徹底した衛生管理に勤めています。',
         details: true },
       { title: '④ 車が停めやすい広々駐車場',
-        img: 'sticking1.jpg',
+        img: '駐車場.JPG',
         text: "最大駐車数20台。\n 広い駐車スペースで安心した通院を実現。\n ※駐車が苦手な女性でも安心して止められます",
         details: false },
       { title: '⑤ 訪問診療の実施',
@@ -129,9 +129,9 @@ class Portal::DentistsController < ApplicationController
         img: 'sticking3.jpg',
         text: '患者様自身でご自身の口腔状況を把握していただきやすいよう。検査結果を印刷してお渡ししております。',
         details: false },
-      { title: '⑦ 将来を見越した治療',
-        img: 'sticking4.jpg',
-        text: "1, できる限り歯を削らない\n2, できる限り神経は抜かない\n3, できる限り抜歯しない\n当院では以上の事を心がけ将来を見越した治療を行なっています。",
+      { title: '⑦ 保育士スタッフ',
+        img: '保育士.JPG',
+        text: "当院には保育士免許を有したスタッフがいるため、小さなお子様がいても安心して治療が受けられます。",
         details: false },
       { title: '⑧ 広々とした診療室',
         img: 'sticking6.jpg',

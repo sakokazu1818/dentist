@@ -79,9 +79,13 @@ html {
 				overflow: hidden;
 				height: 13em;
 				position: relative;
+				ul {
+					padding-left: 0;
+				  list-style: none;
+				}
 			}
 
-			#clinic-img {
+			.clinic-img {
 				height: 13em;
 				overflow: hidden;
 			}
@@ -128,6 +132,7 @@ html {
 				border: thick solid #ABEDE3;
 				overflow-y:scroll;
 				height: 200px;
+				line-height: 0.5;
 			}
 		}
 
@@ -364,6 +369,10 @@ html {
 
 			.clinic-img-wrapper {
 				height: 50em;
+				ul {
+					padding-left: 0;
+				  list-style: none;
+				}
 			}
 
 			.nav-link-icon {

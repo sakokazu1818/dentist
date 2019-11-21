@@ -1,7 +1,3 @@
-- if controller.controller_name == 'dentists'
-  - (1..5).each do |i|
-    .d-none= image_tag("clinic#{i}.png", alt: '医院', id: "clinic#{i}")
-
 .content.pt-3
   .container
     .row
@@ -17,11 +13,12 @@
 .content
   .container
     .row
-      .col-9= image_tag('medical_hours.png', alt: '診療時間', class: 'img-medical-hours')
+      .col-12= image_tag('medical_hours.png', alt: '診療時間', class: 'img-medical-hours')
 - if controller.controller_name == 'dentists'
   .content.pb-2.mt-3
     .container-fluid.pr-0.pl-0
       .row
-        .col-12.text-center.clinic-img-wrapper
-          = image_tag('clinic1.png', alt: '医院', id: 'clinic-img')
--# .trim.mb-1= image_tag('wave.png', alt: 'いしがき歯科', class: 'img-wave')
+        .col-12.clinic-img-wrapper
+          %ul#fade
+            - (1..5).each do |i|
+              %li= image_tag("clinic#{i}.png", alt: '医院', class: "clinic-img")

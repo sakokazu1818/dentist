@@ -16,3 +16,4 @@ import {} from 'jquery-ujs'
 // fontawesome.dom.i2svg()
 
 import './dentists.js'
+import './lib/jquery.innerfade.js'
