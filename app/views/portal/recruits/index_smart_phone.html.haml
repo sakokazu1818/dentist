@@ -1,17 +1,19 @@
 .container
-  .row.pt-5
-    .col-4.pr-1.pl-1= link_to(image_tag('hygienist_baner.png', class: 'img-fluid',
-      alt: '歯科衛生士(常勤)'), { anchor: 'hygienist' })
-
-    .col-4.pr-1.pl-1= link_to(image_tag('hygienist_part_baner.png', class: 'img-fluid',
-      alt: '歯科衛生士(パート)'), { anchor: 'part-hygienist' })
-
-    .col-4.pr-1.pl-1= link_to(image_tag('reception_assistant.png', class: 'img-fluid',
-      alt: '受付助手'), { anchor: 'reception' })
-.container
   .row.pt-3
     .col-12= image_tag('recruits.png', class: 'img-fluid')
-.container.mb-5
+.container
+  .border-green-area
+    .row.pt-3.mb-3.mr-1.ml-1
+      .col-12= link_to(image_tag('hygienist_baner.png', class: 'img-fluid',
+        alt: '歯科衛生士(常勤)'), { anchor: 'hygienist' })
+
+      .col-12.mt-4= link_to(image_tag('part_hygienist_baner.png', class: 'img-fluid',
+        alt: '歯科衛生士(パート)'), { anchor: 'part-hygienist' })
+
+      .col-12.mt-4= link_to(image_tag('reception_baner.png', class: 'img-fluid',
+        alt: '受付助手'), { anchor: 'reception' })
+
+.container.mb-5.mt-5
   .border-green-area
     .row
       #hygienist.col-12.mt-1
