@@ -10,7 +10,7 @@ ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/var/www/dentist"
 
-append :linked_files, 'config/database.yml', 'config/master.key'
+append :linked_files, 'config/master.key'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
