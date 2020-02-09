@@ -45,5 +45,6 @@ $ bundle exec yarn run eslint --fix 対象ファイルのパス
 
 ```
 export DENTIST_PRODUCTION_SERVER=133.167.124.33
+scp config/master.key ishigaki-d:/var/www/dentist/config/
 bundle exec cap production deploy
 ```
