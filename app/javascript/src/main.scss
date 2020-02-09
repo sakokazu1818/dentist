@@ -229,6 +229,22 @@ html {
 			padding: 0.4em;
 			border-style: solid; border-color: #c0e5df;
 			border-radius: 0.4em;
+
+			.recruits-h5 {
+				font-weight: bold;
+				font-size: 1.3em;
+				color: #69390e;
+			}
+
+			.h-6 {
+				font-weight: bold;
+			}
+
+			.tel {
+				a {
+					text-decoration: none;
+				}
+			}
 		}
 
 		.imgName {
