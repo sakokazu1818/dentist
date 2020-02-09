@@ -27,7 +27,7 @@ https://qiita.com/wroc/items/d15b1015c899b0cf77da
 git push heroku ishigaki:master --force
 
 ### log
-$ heroku logs -t 
+$ heroku logs -t
 
 ### eslint
 
@@ -42,3 +42,8 @@ $ bundle exec yarn run eslint --fix 対象ファイルのパス
 ```
 
 /usr/local/bin/bundle exec rails s -e production
+
+```
+export DENTIST_PRODUCTION_SERVER=133.167.124.33
+bundle exec cap production deploy
+```
