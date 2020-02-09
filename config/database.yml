@@ -54,4 +54,5 @@ production:
   database: dentist_production
   username: root
   password: P@ssw0rd
+  socket: /var/lib/mysql/mysql.sock
   host: localhost
