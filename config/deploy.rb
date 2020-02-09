@@ -11,6 +11,7 @@ ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 set :deploy_to, "/var/www/dentist"
 
 append :linked_files, 'config/master.key'
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
