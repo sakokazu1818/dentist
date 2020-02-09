@@ -44,7 +44,7 @@ $ bundle exec yarn run eslint --fix 対象ファイルのパス
 /usr/local/bin/bundle exec rails s -e production
 
 ```
-export DENTIST_PRODUCTION_SERVER=133.167.124.33
-scp config/master.key ishigaki-d:/var/www/dentist/shared/config/
-bundle exec cap production deploy
+$ export DENTIST_PRODUCTION_SERVER=133.167.124.33
+$ scp config/master.key ishigaki-d:/var/www/dentist/shared/config/
+$ bundle exec cap production deploy
 ```
