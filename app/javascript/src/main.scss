@@ -231,8 +231,9 @@ html {
 			border-radius: 0.4em;
 
 			.recruits-h5 {
+				background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #fdeec5 3px, #fdeec5 7px);
+        background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #fdeec5 3px, #fdeec5 7px);
 				font-weight: bold;
-				font-size: 1.3em;
 				color: #69390e;
 			}
 
