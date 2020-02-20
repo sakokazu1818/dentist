@@ -354,11 +354,6 @@ html {
 			background-color: #FFF;
 			line-height: 1em;
 
-			.business-information {
-				padding-top: 3em;
-				background-color: #ccf4ee;
-			}
-
 			h1 {
 				font-weight: bolder;
 				font-size: 5vw;
@@ -389,10 +384,12 @@ html {
 			}
 
 			.clinic-img-wrapper {
+				overflow: hidden;
 				height: 50em;
+				position: relative;
 				ul {
 					padding-left: 0;
-				  list-style: none;
+					list-style: none;
 				}
 			}
 
