@@ -79,10 +79,11 @@ class Portal::DentistsController < ApplicationController
     @portal_dentists = []
     if request.smart_phone?
       set_contents_sp
-      set_sticking
     else
       set_contents
     end
+
+    set_sticking
   end
 
   def set_contents

@@ -10,5 +10,5 @@ $(() => {
     $($bg_yellow).css({'background-image':'url(' + $($body).find('#bg_yellow').attr('src') + ')'});
   }
 
-  $('#fade').innerfade({speed: 2500, timeout: 6000});
+  $('#fade').innerfade({speed: 2500, timeout: 6000 });
 })

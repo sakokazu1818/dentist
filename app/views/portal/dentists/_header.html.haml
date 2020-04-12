@@ -1,20 +1,24 @@
-- (1..5).each do |i|
-  .d-none= image_tag("slide#{i}.jpg", alt: '医院', id: "clinic#{i}")
+.container-fluid
+  .row.pt-1
+    %h1.col-4= image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
+    .col-2
+    .col-4.pt-3
+      = image_tag('medical_hours.png', alt: '診療時間', class: 'img-fluid')
+    .col-2.pt-3.pt-4.query
+      = "お問い合わせ＆予約"
+      %br
+      %br
+      %span
+        %i.fas.fa-phone-volume.pb-1.pt-1.tc-b
+        %span.tc-b 0567-22-3977
+      -# %br
+      -# %br
+      -# %span
+      -#   %br 〒496-0042
+      -#   愛知県津島市寺前町
+      -#   %br 3丁目21-1
 
-.row.pt-3
-  %h1.col-4= image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
-  .col-4.pt-3
-  .col-4.pt-3
-    = "〒496-0042"
-    %br= "\n愛知県津島市寺前町3丁目21-1"
-    = image_tag('medical_hours.png', alt: '診療時間', class: 'img-fluid')
-    .contact-us.pt-3.text-right
-      %p.text= 'ご予約・お問い合わせはこちら'
-      %i.fas.fa-phone-volume
-      = '0567-22-3977'
-
-.row.pt-3
-  .col-12.clinic-img-wrapper
-    %ul#fade
-      - (1..5).each do |i|
-        %li= image_tag("slide#{i}.jpg", alt: '医院', class: "clinic-img")
+.clinic-img-wrapper
+  %ul#fade
+    - (1..5).each do |i|
+      %li= image_tag("slide#{i}.jpg", alt: '医院', class: "")

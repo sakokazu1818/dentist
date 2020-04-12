@@ -350,6 +350,10 @@ html {
 		-webkit-text-fill-color: #69390e;
 		font-weight: bolder;
 
+		.border-bottom {
+			border-bottom: solid 6px #feed35 !important;
+		}
+
 		header{
 			background-color: #FFF;
 			line-height: 1em;
@@ -385,18 +389,32 @@ html {
 
 			.clinic-img-wrapper {
 				overflow: hidden;
-				height: 50em;
+				height: 40em;
 				position: relative;
 				ul {
-					padding-left: 0;
 					list-style: none;
+					li {
+						left: 0;
+					  right: 0;
+					  margin: auto;
+					}
+					img {
+						height: auto;
+						width: 100%;
+						object-fit: cover;
+						object-position: 0% -90px;
+					}
 				}
 			}
 
+			.query {
+				font-size: 1.2em;
+			}
+
 			.nav-link-icon {
-				padding-left: 1em;
-				padding-right: 1em;
-				width: 5.5em;
+				padding-left: 2.5em;
+				padding-right: 2.5em;
+				width: 8em;
 			}
 
 			.navbar-collapse {
@@ -407,15 +425,20 @@ html {
 
 			.nav-text {
 				color: #69390e;
+				font-size: 0.8em;
 			}
 		}
 
-		.news {
-			.news-table {
-				border: thick solid #ABEDE3;
-				overflow-y:scroll;
-				height: 200px;
-			}
+		.news-table {
+			overflow-y:scroll;
+			line-height: 0.5;
+		}
+
+		.sticking-img {
+			width: 100%;
+			height: 16em;
+			object-fit: cover;
+			border-radius: 0.4em;
 		}
 
 		.trim {
