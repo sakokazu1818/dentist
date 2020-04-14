@@ -410,23 +410,32 @@ html {
 			.query {
 				font-size: 1.2em;
 			}
+		}
 
-			.nav-link-icon {
-				padding-left: 2.5em;
-				padding-right: 2.5em;
-				width: 8em;
-			}
+		.nav-link-icon {
+			padding-left: 2.5em;
+			padding-right: 2.5em;
+			width: 8em;
+		}
 
-			.navbar-collapse {
-				background-color: #FFF;
-				padding-top: 2em;
-				padding-bottom: 4em;
-			}
+		.nav-link-icon-1 {
+			padding-left: 2.5em;
+			width: 5.6em;
+		}
 
-			.nav-text {
-				color: #69390e;
-				font-size: 0.8em;
-			}
+		.nav-link-icon-2 {
+			padding-right: 2.5em;
+			width: 5.6em;
+		}
+
+		.navbar-collapse {
+			padding-top: 2em;
+			padding-bottom: 2em;
+		}
+
+		.nav-text {
+			color: #69390e;
+			font-size: 0.8em;
 		}
 
 		.news-table {
@@ -450,6 +459,15 @@ html {
 				width: 140%;
 				overflow: hidden;
 			}
+		}
+
+		.bg-h {
+			background-color: #81ded3;
+		}
+
+		.wave {
+			width: 100%;
+			height: auto;
 		}
 
 		#main {
