@@ -2,11 +2,7 @@
   %ul.navbar-nav.mx-auto
     - contents.each do |c|
       %li.nav-item.text-center.active
-        = link_to '#', class: 'nav-link' do
-          - if c[:img_name].kind_of?(Array)
-            = image_tag c[:img_name].first, class: 'nav-link-icon-1'
-            = image_tag c[:img_name].second, class: 'nav-link-icon-2'
-          - else
-            = image_tag c[:img_name], class: 'nav-link-icon'
+        = link_to c[:link], class: 'nav-link' do
+          = image_tag c[:img_name], class: 'nav-link-icon'
           %br
           .nav-text= c[:text]

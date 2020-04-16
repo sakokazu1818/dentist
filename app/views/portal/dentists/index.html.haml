@@ -25,8 +25,9 @@
       .col-12
         %h3
           %span
+            -# = image_tag('icon_doctor.png', alt: '', class: 'tc-b-img')
             %i.fas.fa-tooth.pb-1.tc-b
-            %span.tc-b いしがき歯科の特徴
+            %span いしがき歯科の特徴
 
   - stickings = @sticking.each_slice(2).to_a
   .container

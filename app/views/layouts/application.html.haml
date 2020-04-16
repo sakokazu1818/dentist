@@ -15,7 +15,6 @@
       .business-information
         = render partial: 'header'
     .container-fluid
-      - @contents.each do |c|
-        %nav.navbar.navbar-expand.navbar-light
-          = render partial: 'navber.html.haml', locals: { contents: c }
+      %nav.navbar.navbar-expand-sm.navbar-light
+        = render partial: 'portal/common/navbar_smart_phone', locals: { contents: @contents }
     %body= yield
