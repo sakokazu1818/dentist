@@ -18,7 +18,7 @@
       %h5= link_to image_tag('110499.jpg', { class: 'img-fluid', :border => '0',
         :alt => 'ドクターズファイル'}), 'https://doctorsfile.jp/h/110499/df/1/'
 
-= image_tag('wave-wh.png', alt: '', class: 'wave')
+= image_tag('wave-wh-3.png', alt: '', class: 'wave')
 .bg-h
   .container.pt-3
     .row
@@ -40,7 +40,7 @@
               %p.card-text= image_tag(s[:img], alt: '医院', class: 'sticking-img')
               %p.card-text= simple_format(s[:text])
 
-= image_tag('wave-wh-2.png', alt: '', class: 'wave')
+= image_tag('wave-wh-4.png', alt: '', class: 'wave')
 
 .container.pt-3.mb-3
   .card-deck
@@ -56,3 +56,13 @@
         %p.card-text 院内風景
         %p.card-text
           %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!4v1558424278271!6m8!1m7!1sCAoSLEFGMVFpcFBrazIybnR3OGxZaUtubWpNaHlpSmV3Y2N5YnpyeGxtU2R0eFpM!2m2!1d35.18772203479!2d136.73787814582!3f145.00485225452962!4f-9.72329895937304!5f0.7820865974627469", :style => "border:0", :width => "100%"}
+.container.mb-5.mt-5
+  .row
+    .col-8
+    .col-2= image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
+    .col-2
+      = image_tag('query.png', alt: '診療時間', class: 'img-fluid')
+  .row
+    .col-8
+    .col-4
+      = image_tag('medical_hours.png', alt: '診療時間', class: 'img-fluid')

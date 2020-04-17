@@ -1,4 +1,4 @@
-.container-fluid
+.container
   .row.pt-1
     %h1.col-4= image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
     .col-1
@@ -7,7 +7,8 @@
     .col-3.pt-3
       = image_tag('query.png', alt: '診療時間', class: 'img-fluid')
 
-.clinic-img-wrapper.pt-5
-  %ul#fade
-    - (1..5).each do |i|
-      %li= image_tag("slide#{i}.jpg", alt: '医院', class: "")
+.container
+  .clinic-img-wrapper.pt-5
+    %ul#fade
+      - (1..5).each do |i|
+        %li= image_tag("slide#{i}.jpg", alt: '医院', class: "")
