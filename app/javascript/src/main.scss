@@ -460,7 +460,13 @@ html {
 		}
 
 		.bg-h {
-			background-color: #81ded3;
+			background-image: url('bg_grid.png');
+		}
+
+		.tb {
+			font-weight: lighter;
+			color: #000;
+			-webkit-text-fill-color: #000;
 		}
 
 		.wave {
