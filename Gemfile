@@ -46,8 +46,6 @@ gem 'ransack'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
-gem 'bootstrap'
-
 gem 'jpmobile'
 
 gem 'webpacker', github: 'rails/webpacker'
