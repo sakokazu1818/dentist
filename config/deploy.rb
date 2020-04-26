@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.13.0"
+lock "~> 3.11.2"
 
 set :application, "dentist"
 set :repo_url, "git@github.com:sakokazu1818/dentist.git"
