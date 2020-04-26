@@ -48,7 +48,7 @@ gem 'jquery-ui-rails'
 
 gem 'jpmobile'
 
-gem 'webpacker', github: 'rails/webpacker'
+gem 'webpacker', '5.1.1'
 
 gem 'font-awesome-rails'
 
