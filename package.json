@@ -1,0 +1,24 @@
+{
+  "name": "dentist",
+  "version": "1.0.0",
+  "description": "``` $ bundle exec haml-lint ```",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sakokazu1818@github.com/sakokazu1818/dentist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sakokazu1818/dentist/issues"
+  },
+  "homepage": "https://github.com/sakokazu1818/dentist#readme"
+}
