@@ -15,7 +15,8 @@
               %tr
                 %td= n.created_at.strftime('%Y/%m/%d')
               %tr
-                %td= simple_format(n.text)
+                %td= raw Rinku.auto_link(simple_format(n.text))
+
 .sticking
   .container
     .row.pb-3.pt-4

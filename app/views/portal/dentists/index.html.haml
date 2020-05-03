@@ -16,7 +16,7 @@
                         %tr
                           %td= n.created_at.strftime('%Y/%m/%d')
                         %tr
-                          %td= simple_format(n.text)
+                          %td= raw Rinku.auto_link(simple_format(n.text))
       .col-6
         %h5= link_to image_tag('110499.jpg', { class: 'img-fluid', :border => '0',
           :alt => 'ドクターズファイル'}), 'https://doctorsfile.jp/h/110499/df/1/'
