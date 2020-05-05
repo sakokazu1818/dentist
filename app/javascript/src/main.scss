@@ -386,11 +386,12 @@ html {
 			.clinic-img-wrapper {
 				overflow: hidden;
 				height: 23em;
-				position: relative;
 				ul {
+					padding-left: 0;
 					list-style: none;
 					li {
 						height: 23em;
+						width: 100%;
 					  margin: auto;
 					}
 					img {
@@ -400,6 +401,28 @@ html {
 						min-width: 600px;
 						object-fit: cover;
 						object-position: 0% -180px;
+					}
+				}
+			}
+
+			.clinic-img-wrapper-pad {
+				overflow: hidden;
+				height: 23em;
+				ul {
+					padding-left: 0;
+					list-style: none;
+					li {
+						height: 23em;
+						width: 100%;
+					  margin: auto;
+					}
+					img {
+						height: auto;
+						min-height: 600px;
+						width: 100%;
+						min-width: 600px;
+						object-fit: cover;
+						object-position: 40% -180px;
 					}
 				}
 			}
