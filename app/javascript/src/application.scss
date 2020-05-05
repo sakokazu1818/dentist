@@ -10,5 +10,6 @@
   src: url('../../assets/fonts/NotoSerifSC-Regular.otf') format("opentype");
 }
 
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~bootstrap/dist/css/bootstrap';
 @import './main.scss';
