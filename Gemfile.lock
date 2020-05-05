@@ -195,6 +195,9 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
+    rack-user_agent (0.5.2)
+      rack (>= 1.5)
+      woothee (>= 1.0.0)
     rack_session_access (0.2.0)
       builder (>= 2.0.0)
       rack (>= 1.0.0)
@@ -317,6 +320,7 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
+    woothee (1.11.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -346,6 +350,7 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   puma (~> 3.11)
+  rack-user_agent
   rack_session_access
   rails (~> 5.2.2)
   rails-controller-testing

@@ -7,11 +7,12 @@ class Portal::DentistsController < ApplicationController
   # GET /portal/dentists
   # GET /portal/dentists.json
   def index
-    # TDOO
-    # @notification = Admin::Notification.all
     @notification = Admin::Notification.all
 
-    render :index_smart_phone, layout: 'smart_phone.html.haml' if request.smart_phone?
+    unless request.from_pc? || request.from_android_tablet? || request.from_ipad?
+      render :index_smart_phone, layout: 'smart_phone.html.haml'
+      return
+    end
   end
 
   # GET /portal/dentists/1
@@ -75,7 +76,7 @@ class Portal::DentistsController < ApplicationController
 
   def set_index_variable
     @portal_dentists = []
-    if request.smart_phone?
+    unless request.from_pc? || request.from_android_tablet? || request.from_ipad?
       set_contents_sp
     else
       set_contents
