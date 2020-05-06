@@ -438,16 +438,6 @@ html {
 			width: 8em;
 		}
 
-		.nav-link-icon-1 {
-			padding-left: 2.5em;
-			width: 5.6em;
-		}
-
-		.nav-link-icon-2 {
-			padding-right: 2.5em;
-			width: 5.6em;
-		}
-
 		.navbar-collapse {
 			padding-top: 2em;
 			padding-bottom: 2em;
@@ -456,6 +446,17 @@ html {
 		.nav-text {
 			color: #69390e;
 			font-size: 0.8em;
+		}
+
+		.nav-link-icon-pd {
+			width: 5.5em;
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+
+		.nav-text-pd {
+			font-size: 1.5vw;
+			color: #69390e;
 		}
 
 		.news-table {

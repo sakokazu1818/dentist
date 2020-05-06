@@ -1,8 +1,8 @@
 .collapse.navbar-collapse
   %ul.navbar-nav.mx-auto
     - contents.each do |c|
-      %li.nav-item.text-center.active
+      %li.nav-item.text-center
         = link_to c[:link], class: 'nav-link' do
-          = image_tag c[:img_name], class: 'nav-link-icon'
+          = image_tag c[:img_name], class: 'nav-link-icon-pd'
           %br
-          .nav-text= c[:text]
+          .nav-text-pd= c[:text]

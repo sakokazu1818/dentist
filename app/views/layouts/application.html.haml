@@ -14,7 +14,12 @@
     %header
       .business-information
         = render partial: 'header'
-    .container-fluid
-      %nav.navbar.navbar-expand-sm.navbar-light
-        = render partial: 'portal/common/navbar_smart_phone', locals: { contents: @contents }
+    - if request.from_pc?
+      .container-fluid
+        %nav.navbar.navbar-expand-sm.navbar-light
+          = render partial: 'portal/common/navbar_smart_phone', locals: { contents: @contents }
+    - else
+      .container-fluid
+        %nav.navbar.navbar-expand.navbar-light
+          = render partial: 'portal/dentists/navber', locals: { contents: @contents }
     %body= yield
