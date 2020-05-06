@@ -387,42 +387,35 @@ html {
 				overflow: hidden;
 				height: 23em;
 				ul {
-					padding-left: 0;
 					list-style: none;
 					li {
-						height: 23em;
 						width: 100%;
 					  margin: auto;
 					}
 					img {
-						height: auto;
-						min-height: 600px;
-						width: 100%;
-						min-width: 600px;
-						object-fit: cover;
-						object-position: 0% -180px;
+						display: block;
+					  margin: 0 auto;
+						padding: auto;
 					}
 				}
 			}
 
 			.clinic-img-wrapper-pad {
 				overflow: hidden;
-				height: 23em;
+				height: 16em;
 				ul {
 					padding-left: 0;
 					list-style: none;
 					li {
-						height: 23em;
 						width: 100%;
 					  margin: auto;
 					}
 					img {
-						height: auto;
-						min-height: 600px;
-						width: 100%;
-						min-width: 600px;
-						object-fit: cover;
-						object-position: 40% -180px;
+						height: 13em;
+						width: auto;
+						display: block;
+						margin: 0 auto;
+						padding: auto;
 					}
 				}
 			}
