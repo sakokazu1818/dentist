@@ -1,6 +1,8 @@
 .container
-  .row.pt-5
-    .col-12= image_tag('clinic1-1.png', class: 'img-fluid')
+  .row
+    .col-3
+    .col-6= image_tag('clinic1-1.png', class: 'img-fluid')
+    .col-3
 .container.mb-5
   .border-green-area
     .row
@@ -12,50 +14,27 @@
       .col-12
         %h4 衛生管理について
     .row.pt-3
-      .col-12.text-center= image_tag('衛生管理.JPG', class: 'img-fluid')
-    .row.pt-3
-      .col-12.text-center= image_tag('衛生管理２.JPG', class: 'img-fluid')
-    .row.pt-3
-      .col-12.text-center= image_tag('衛生管理３.JPG', class: 'img-fluid')
+      .col-4.text-center= image_tag('衛生管理.JPG', class: 'img-fluid')
+      .col-4.text-center= image_tag('衛生管理２.JPG', class: 'img-fluid')
+      .col-4.text-center= image_tag('衛生管理３.JPG', class: 'img-fluid')
     .row.pt-3
       .col-12 　患者様に安心して、安全な歯科治療を受けていただけるように、いしがき歯科では衛生管理の徹底に努めています。
     .row
       .col-12 　ヨーロッパ基準のクラスB滅菌器など、当院が取り組んでいる衛生管理の詳細についてご紹介します。
     .row.mt-4
-      .col-12
-        %h5= simple_format "DAC プロフェッショナル\n　(クラスＢ 滅菌器)"
+      %h5.col-4= simple_format "DAC プロフェッショナル\n　(クラスＢ 滅菌器)"
+      %h5.col-4= simple_format "DAC ユニバーサル"
+      %h5.col-4= simple_format "エアロクリーン\n　(最高基準の空気清浄機)"
     .row
-      .col-12.text-center= image_tag('sterilizer.png', class: 'img-fluid')
+      .col-4.text-center= image_tag('sterilizer.png', class: 'img-fluid')
+      .col-4.text-center= image_tag('mouth_sterilizer.png', class: 'img-fluid')
+      .col-4.text-center= image_tag('35md_pic_01.png', class: 'img-fluid')
     .row.mt-3
-      .col-12 　世界の中でも特に厳しい衛生管理の基準を設けているヨーロッパの規格にはいくつかのランクがあります。
+      .col-4= simple_format "世界の中でも特に厳しい衛生管理の基準を設けているヨーロッパの規格にはいくつかのランクがあります。\nそのひとつである「クラスB」は世界最高基準にあたり、当院はこのクラスBの滅菌器を導入しています。\nミラーやピンセットといった治療器具を使用するたびに高圧水蒸気での滅菌を欠かさず、治療器具を介した院内感染の防止を徹底しています。"
+      .col-4= simple_format "歯を削る処置に使用するハンドピースには、多くの細菌が含まれた血液や唾液が付着します。そのため、通常の洗浄だけでは不十分です。\nそこで当院ではハンドピース専用の滅菌器を使用。洗いにくい器具の内部まで徹底して滅菌を行っています。"
+      .col-4= simple_format "安心で・安全・清潔でやさしい医療環境づくりを当院では心がけております。\n当院では患者さまが安心してご来院いただけますよう、医療施設用高性能空気清浄装置エアロシステム 35MDを設置しています。\nこのシステムは、国公立病院や大学病院の手術室で採用されており、信頼性も高く空気中のウイルス、細菌、微粉塵、花粉、PM2.5等をすばやく除去することができます。\n定期的なメンテナンスを実施していますので、常に安全で清潔な空気環境を送り出しています。"
+  .border-green-area.mt-5
     .row
-      .col-12 　そのひとつである「クラスB」は世界最高基準にあたり、当院はこのクラスBの滅菌器を導入しています。
-    .row
-      .col-12 　ミラーやピンセットといった治療器具を使用するたびに高圧水蒸気での滅菌を欠かさず、治療器具を介した院内感染の防止を徹底しています。
-    .row.mt-5
-      .col-12
-        %h5 DAC ユニバーサル
-    .row
-      .col-12.text-center= image_tag('mouth_sterilizer.png', class: 'img-fluid')
-    .row.mt-3
-      .col-12 　歯を削る処置に使用するハンドピースには、多くの細菌が含まれた血液や唾液が付着します。そのため、通常の洗浄だけでは不十分です。
-    .row
-      .col-12 　そのひとつである「クラスB」は世界最高基準にあたり、当院はこのクラスBの滅菌器を導入しています。
-      .col-12 　そこで当院ではハンドピース専用の滅菌器を使用。洗いにくい器具の内部まで徹底して滅菌を行っています。
-    .row.mt-5
-      .col-12
-        %h5= simple_format "エアロクリーン\n　(最高基準の空気清浄機)"
-    .row
-      .col-12.text-center= image_tag('35md_pic_01.png', class: 'img-fluid')
-    .row.mt-3
-      .col-12 　安心で・安全・清潔でやさしい医療環境づくりを当院では心がけております。
-    .row
-      .col-12 　当院では患者さまが安心してご来院いただけますよう、医療施設用高性能空気清浄装置エアロシステム 35MDを設置しています。
-    .row
-      .col-12 　このシステムは、国公立病院や大学病院の手術室で採用されており、信頼性も高く空気中のウイルス、細菌、微粉塵、花粉、PM2.5等をすばやく除去することができます。
-    .row
-      .col-12 　定期的なメンテナンスを実施していますので、常に安全で清潔な空気環境を送り出しています。
-    .row.mt-5
       .col-12
         %h4 CT撮影について
     .row
