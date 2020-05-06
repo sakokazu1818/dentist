@@ -9,7 +9,9 @@
 
 - if controller.controller_name == 'dentists'
   .container
-    %div.pt-5{ class: request.from_pc? ? 'clinic-img-wrapper' : 'clinic-img-wrapper-pad' }
-      %ul#fade
-        - (1..5).each do |i|
-          %li= image_tag("slide#{i}.jpg", alt: '医院', class: "")
+    .row
+      .col-12
+        %div.pt-5{ class: request.from_pc? ? 'clinic-img-wrapper' : 'clinic-img-wrapper-pad' }
+          %ul#fade
+            - (1..5).each do |i|
+              %li= image_tag("slide#{i}.jpg", alt: '医院', class: "")
