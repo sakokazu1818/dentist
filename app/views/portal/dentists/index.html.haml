@@ -39,22 +39,3 @@
               %h5.card-title= s[:title]
               %p.card-text= image_tag(s[:img], alt: '医院', class: 'sticking-img')
               %p.card-text= simple_format(s[:text])
-
-  .container.pt-5.mb-3.pb-5
-    .card-deck
-      .card
-        .card-body
-          .card-title アクセス
-          %p.card-text 名鉄津島線　藤浪駅より徒歩3分
-          %p.card-text
-            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "400", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.7626734241003!2d136.7355441151482!3d35.18746726450014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600398edc0cae3f5%3A0x3c4ac376b43c5257!2z44GE44GX44GM44GN5q2v56eR!5e0!3m2!1sja!2sjp!4v1560217945947!5m2!1sja!2sjp", :style => "border:0", :width => "100%"}
-      .card
-        .card-body
-          %p.card-text 院内風景
-          %p.card-text
-            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!4v1558424278271!6m8!1m7!1sCAoSLEFGMVFpcFBrazIybnR3OGxZaUtubWpNaHlpSmV3Y2N5YnpyeGxtU2R0eFpM!2m2!1d35.18772203479!2d136.73787814582!3f145.00485225452962!4f-9.72329895937304!5f0.7820865974627469", :style => "border:0", :width => "100%"}
-  .container.mb-5.mt-5
-    .row
-      .col-5= image_tag('footer_left.png', alt: 'いしがき歯科', class: 'img-fluid')
-      .col-1
-      .col-6= image_tag('footer_right.png', alt: '診療時間', class: 'img-fluid')
