@@ -82,6 +82,9 @@ html {
 					padding-left: 0;
 				  list-style: none;
 				}
+				.none {
+					display: none;
+				}
 			}
 
 			.clinic-img {
@@ -413,6 +416,9 @@ html {
 						display: block;
 						margin: 0 auto;
 						padding: auto;
+					}
+					.none {
+						display: none;
 					}
 				}
 			}
