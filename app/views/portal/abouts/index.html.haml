@@ -1,14 +1,15 @@
 .container
   .row
-    .col-3
-    .col-6= image_tag('clinic1-1.png', class: 'img-fluid')
-    .col-3
+    .col-2
+    .col-8= image_tag('clinic1.png', class: 'img-fluid')
+    .col-2
 .container.mb-5
-  .border-green-area
+  .border-green-area.mt-2
     .row
-      .col-12 　石垣歯科は1938年に初代院長の石垣久男が津島神社近くの浦方町にて開業し、2代目院長の光敏へと引き継ぎ長らく診療をして参りました。
+      .col-12
+        %h4 当院について
     .row
-      .col-12 　そして80周年目となる節目の年に3代目院長の賢二郎の代になり、より現代のニーズに応えられよう設備の充実を図り2018.9藤浪駅の前へと移転しリニューアル致しました。
+      .col-12= simple_format "石垣歯科は1938年に初代院長の石垣久男が津島神社近くの浦方町にて開業し、2代目院長の光敏へと引き継ぎ長らく診療をして参りました。\nそして80周年目となる節目の年に3代目院長の賢二郎の代になり、より現代のニーズに応えられよう設備の充実を図り2018.9藤浪駅の前へと移転しリニューアル致しました。"
   .border-green-area.mt-5
     .row
       .col-12
