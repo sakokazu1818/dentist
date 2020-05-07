@@ -212,12 +212,6 @@ html {
 			border-radius: 0.4em;
 		}
 
-		.bg-yellow-area {
-			background-image: '';
-			padding: 0.4em;
-			border-radius: 0.4em;
-		}
-
 		.border_radius {
 	    border-radius: 35px;
 		}
@@ -396,6 +390,9 @@ html {
 						display: block;
 					  margin: 0 auto;
 						padding: auto;
+					}
+					.none {
+						display: none;
 					}
 				}
 			}

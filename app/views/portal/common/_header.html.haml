@@ -14,4 +14,4 @@
         .clinic-img-wrapper.pt-5{ class: request.from_pc? ? '' : 'clinic-img-wrapper-pad' }
           %ul#fade
             - (1..5).each do |i|
-              %li= image_tag("slide#{i}_pc.jpg", alt: '医院', class: "")
+              %li= image_tag("slide#{i}_pc.jpg", alt: '医院', class: i == 1 ? '' : 'none')
