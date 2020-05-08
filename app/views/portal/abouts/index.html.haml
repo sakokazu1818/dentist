@@ -4,16 +4,20 @@
     .col-8= image_tag('clinic1.png', class: 'img-fluid')
     .col-2
 .container.mb-5
-  .border-green-area.mt-2
+  .mt-5
     .row
       .col-12
-        %h4 当院について
+        %h4.ch4
+          %i.fas.fa-hospital
+          %sapn 当院について
     .row
-      .col-12= simple_format "石垣歯科は1938年に初代院長の石垣久男が津島神社近くの浦方町にて開業し、2代目院長の光敏へと引き継ぎ長らく診療をして参りました。\nそして80周年目となる節目の年に3代目院長の賢二郎の代になり、より現代のニーズに応えられよう設備の充実を図り2018.9藤浪駅の前へと移転しリニューアル致しました。"
-  .border-green-area.mt-5
+      .col-12.tc-w= simple_format "　石垣歯科は1938年に初代院長の石垣久男が津島神社近くの浦方町にて開業し、2代目院長の光敏へと引き継ぎ長らく診療をして参りました。\nそして80周年目となる節目の年に3代目院長の賢二郎の代になり、より現代のニーズに応えられよう設備の充実を図り2018.9藤浪駅の前へと移転しリニューアル致しました。"
+  .mt-5
     .row
       .col-12
-        %h4 衛生管理について
+        %h4.ch4
+          %i.fas.fa-pump-medical
+          %sapn 衛生管理について
     .row.pt-3
       .col-4.text-center= image_tag('衛生管理.JPG', class: 'img-fluid')
       .col-4.text-center= image_tag('衛生管理２.JPG', class: 'img-fluid')
@@ -22,7 +26,7 @@
       .col-12 　患者様に安心して、安全な歯科治療を受けていただけるように、いしがき歯科では衛生管理の徹底に努めています。
     .row
       .col-12 　ヨーロッパ基準のクラスB滅菌器など、当院が取り組んでいる衛生管理の詳細についてご紹介します。
-    .row.mt-4
+    .row.mt-5
       %h5.col-4= simple_format "DAC プロフェッショナル\n　(クラスＢ 滅菌器)"
       %h5.col-4= simple_format "DAC ユニバーサル"
       %h5.col-4= simple_format "エアロクリーン\n　(最高基準の空気清浄機)"
@@ -34,14 +38,17 @@
       .col-4= simple_format "世界の中でも特に厳しい衛生管理の基準を設けているヨーロッパの規格にはいくつかのランクがあります。\nそのひとつである「クラスB」は世界最高基準にあたり、当院はこのクラスBの滅菌器を導入しています。\nミラーやピンセットといった治療器具を使用するたびに高圧水蒸気での滅菌を欠かさず、治療器具を介した院内感染の防止を徹底しています。"
       .col-4= simple_format "歯を削る処置に使用するハンドピースには、多くの細菌が含まれた血液や唾液が付着します。そのため、通常の洗浄だけでは不十分です。\nそこで当院ではハンドピース専用の滅菌器を使用。洗いにくい器具の内部まで徹底して滅菌を行っています。"
       .col-4= simple_format "安心で・安全・清潔でやさしい医療環境づくりを当院では心がけております。\n当院では患者さまが安心してご来院いただけますよう、医療施設用高性能空気清浄装置エアロシステム 35MDを設置しています。\nこのシステムは、国公立病院や大学病院の手術室で採用されており、信頼性も高く空気中のウイルス、細菌、微粉塵、花粉、PM2.5等をすばやく除去することができます。\n定期的なメンテナンスを実施していますので、常に安全で清潔な空気環境を送り出しています。"
-  .border-green-area.mt-5
+  .mt-5
     .row
       .col-12
-        %h4 CT撮影について
-    .row
-      .col-12
+        %h4.ch4
+          %i.fas.fa-x-ray
+          %sapn CT撮影について
+    .row.pt-3
+      .col-2
+      .col-8
         .ct
-          %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/e0Z8a7a46MI", :width => "560"}
+          %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "415", :src => "https://www.youtube.com/embed/e0Z8a7a46MI", :width => "660"}
     .row.mt-3
       .col-12 　撮影では、放射線を受けることになります。しかし、歯科用のレントゲン撮影で受ける放射線量は、日常生活で自然界から受ける量のわずか1/50～1/60程度しかありません。
     .row
