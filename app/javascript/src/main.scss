@@ -341,7 +341,7 @@ html {
   #pc {
 		color: #69390e;
 		-webkit-text-fill-color: #69390e;
-		font-weight: bolder;
+		// font-weight: bolder;
 
 		.border-bottom {
 			border-bottom: solid 6px #feed35 !important;
@@ -506,12 +506,7 @@ html {
 		}
 
 		.ch4 {
-		  text-shadow: 0 0 5px white;
-		  padding: 0.3em 0.5em;
-			font-weight: bolder;
-			display: inline-block;
-		  background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-		  background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+			border-bottom: solid; border-color: #81ded3;
 		}
 
 		.recruits-h5 {
