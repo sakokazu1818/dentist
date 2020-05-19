@@ -1,6 +1,6 @@
 .container
   .row.pt-1
-    %h1.col-4= image_tag('logo.png', alt: 'いしがき歯科', class: 'img-fluid')
+    %h1.col-4= link_to image_tag('logo.png', class: 'img-fluid', alt: 'いしがき歯科'), '/'
     .col-1
     .col-4.pt-3
       = image_tag('medical_hours.png', alt: '診療時間', class: 'img-fluid')
