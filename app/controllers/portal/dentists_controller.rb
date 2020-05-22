@@ -108,7 +108,7 @@ class Portal::DentistsController < ApplicationController
         details: false },
       { title: '⑤ 訪問診療の実施',
         img: 'sticking5.jpg',
-        text: "お体が不自由な方や、お子様の為当院では訪問診療も実施しております。\n ※認定訪問歯科衛生士の在籍",
+        text: "当院は訪問診療の実績が２０年以上あります。\n要介護の高齢者や体に障害がある等で通院が困難な方に対して施設やご自宅まで訪問させて頂きます。",
         details: true },
       { title: '⑥ 検査結果のお渡し',
         img: 'sticking3.jpg',
