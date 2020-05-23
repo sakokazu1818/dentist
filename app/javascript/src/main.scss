@@ -283,6 +283,25 @@ html {
 		  background: repeating-linear-gradient(-45deg, #1aa596, #1aa596 2px, white 2px, white 4px);
 		}
 
+		.box29 {
+		    margin: 2em 0;
+		    background: #dcefff;
+		}
+		.box29 .box-title {
+		    font-size: 1.2em;
+		    background: #5fb3f5;
+		    padding: 4px;
+		    text-align: center;
+		    color: #FFF;
+		    font-weight: bold;
+		    letter-spacing: 0.05em;
+		}
+		.box29 p {
+		    padding: 15px 20px;
+		    margin: 0;
+				color: #69390e;
+		}
+
 		#map {
 			height: 13em;
 			margin-bottom: 10%;
