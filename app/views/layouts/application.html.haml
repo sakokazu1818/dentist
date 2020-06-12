@@ -25,3 +25,19 @@
           = render partial: 'portal/dentists/navber', locals: { contents: @contents }
     %body= yield
     %footer= render partial: 'portal/dentists/footer'
+
+  -# %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-169003693-1"}
+  -# :javascript
+  -#   window.dataLayer = window.dataLayer || [];
+  -#   function gtag(){dataLayer.push(arguments);}
+  -#   gtag('js', new Date());
+  -#
+  -#   gtag('config', 'UA-169003693-1');
+
+  %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-116567101-2"}
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116567101-2');

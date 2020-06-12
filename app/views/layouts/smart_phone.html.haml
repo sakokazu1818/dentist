@@ -20,3 +20,20 @@
       = yield
       = render partial: 'portal/common/footer_smart_phone'
     %footer.container-fluid.fixed-bottom.pr-0.pl-0= render partial: 'portal/common/float_smart_phone'
+
+  -# %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-169003693-1"}
+  -# :javascript
+  -#   window.dataLayer = window.dataLayer || [];
+  -#   function gtag(){dataLayer.push(arguments);}
+  -#   gtag('js', new Date());
+  -#
+  -#   gtag('config', 'UA-169003693-1');
+
+  %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-116567101-2"}
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116567101-2');
+
