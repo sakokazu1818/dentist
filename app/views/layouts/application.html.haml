@@ -1,6 +1,13 @@
 !!!
 %html
   %head
+    / Global site tag (gtag.js) - Google Analytics
+    %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-116567101-2"}
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-116567101-2');
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %meta{content: "width=device-width, initial-scale=1, shrink-to-fit=no", name: "viewport"}
     %meta{ content: '津島市のいしがき歯科は名鉄藤浪駅より徒歩３分の歯医者です。愛西市・あま市・稲沢市からも多くご来院頂いております。バリアフリー設計で広々駐車場完備。正確な知識と治療、わかりやすい説明を心がけています。', name: 'Description'}
@@ -33,11 +40,3 @@
   -#   gtag('js', new Date());
   -#
   -#   gtag('config', 'UA-169003693-1');
-
-  / Global site tag (gtag.js) - Google Analytics
-  %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-116567101-2"}
-  :javascript
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-116567101-2');
