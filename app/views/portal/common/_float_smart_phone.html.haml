@@ -1,6 +1,6 @@
 .row
   .col-9.pr-0.footer-img.text-center.pb-3
-    = link_to 'tel:0567223977' do
+    = link_to 'tel:0567223977', :onclick => "gtag('event', 'click', { event_label: 'tel', method : 'tell' });" do
       .pt-1= image_tag('footer.png', alt: '診察のご予約・お問い合わせはこちら', class: 'img-fluid')
   .col-3.footer-to-home.text-center.pl-0
     = link_to root_path do
