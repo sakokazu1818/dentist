@@ -32,10 +32,18 @@
   - stickings = @sticking.each_slice(2).to_a
   .container
     - stickings.each do |sticking|
-      .card-deck
-        - sticking.each_with_index do |s, i|
-          .card.mb-3
+      - if sticking.length > 1
+        .card-deck
+          - sticking.each_with_index do |s, i|
+            .card.mb-3
+              .card-body
+                %h5.card-title= s[:title]
+                %p.card-text= image_tag(s[:img], alt: '医院', class: 'sticking-img')
+                %p.card-text= simple_format(s[:text])
+      - else
+        .card-group.hrf
+          .card.mb-3.mr-3
             .card-body
-              %h5.card-title= s[:title]
-              %p.card-text= image_tag(s[:img], alt: '医院', class: 'sticking-img')
-              %p.card-text= simple_format(s[:text])
+              %h5.card-title= sticking[0][:title]
+              %p.card-text= image_tag(sticking[0][:img], alt: '医院', class: 'sticking-img')
+              %p.card-text= simple_format(sticking[0][:text])

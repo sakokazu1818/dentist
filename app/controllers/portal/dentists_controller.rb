@@ -114,11 +114,7 @@ class Portal::DentistsController < ApplicationController
         img: 'sticking3.jpg',
         text: '患者様自身でご自身の口腔状況を把握していただきやすいよう。検査結果を印刷してお渡ししております。',
         details: false },
-      { title: '⑦ 保育士スタッフ',
-        img: '保育士.JPG',
-        text: "当院には保育士免許を有したスタッフがいるため、小さなお子様がいても安心して治療が受けられます。",
-        details: false },
-      { title: '⑧ 広々とした診療室',
+      { title: '⑦  広々とした診療室',
         img: 'sticking6.jpg',
         text: "広々とした診療室をご用意させていただいております。ベビーカーと一緒に診療室へ入れます。\nベビーカーや車椅子のお客様もご安心してご来院ください。",
         details: false }
