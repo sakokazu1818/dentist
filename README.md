@@ -49,6 +49,10 @@ $ scp config/master.key ishigaki-d:/var/www/dentist/shared/config/
 $ bundle exec cap production deploy
 ```
 
+```
+$ bundle exec cap production puma:restart
+```
+
 # MetaMovics ver2.3 ASP構築メモ
 
 ## さくらのVPS
