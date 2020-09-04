@@ -9,4 +9,13 @@ $(window).on('load', function() {
   $('.clinic-img-wrapper .none').each(function(index, element){
     $(this).removeClass('none')
   })
+
+  let $spGoogleCalenda = $('.sp-google-calenda');
+  if ($spGoogleCalenda.length > 0) {
+    const scale = $spGoogleCalenda.parent().width() / 460;
+
+    $spGoogleCalenda.css( { 'transform-origin': "0 0" } );
+    $spGoogleCalenda.css( { transform: "scale(" + scale + ")" } );
+    $spGoogleCalenda.css('visibility', 'visible');
+  }
 })

@@ -293,7 +293,9 @@ html {
 		}
 
 		.footer-doctor-introduction {
-			margin-bottom: 7em;
+			margin-bottom: 2em;
+			position: relative;
+			top: -100px;
 			.tel {
 				font-size: 2em;
 
@@ -582,5 +584,17 @@ html {
 
 	.card-group.hrf {
 		width: 50%;
+	}
+
+	.google-calendar {
+		overflow: scroll;
+		.wrap {
+			width: 100%;
+			min-width: 900px;
+		}
+	}
+
+	.sp-google-calenda {
+		visibility: hidden;
 	}
 }
