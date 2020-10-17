@@ -584,8 +584,13 @@ html {
 		.b-none {
 			border: none;
 		}
+	}
 
-		.doctors-word {
+	.wrap-doctor-banner {
+		display: inline-block;
+		width: 100%;
+
+		.doctor-banner {
 			width: 100%;
 		}
 	}
