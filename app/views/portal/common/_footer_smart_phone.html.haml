@@ -24,4 +24,18 @@
   .row
     .col-1
     .col-10.text-center.tel.pl-0.pr-0= link_to 'TEL 0567-22-3977', 'tel:0567223977',
-      :onclick => "gtag('event', 'click', { event_label: 'tel', method : 'tell' });"
+      :onclick => "gtag_report_conversion();"
+
+:javascript
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-467579167/c9fvCLa7yb4CEJ_i-t4B',
+        'event_callback': callback
+    });
+    return false;
+  }
